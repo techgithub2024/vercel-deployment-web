@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
 
-import Logo from "../../images/logo.png"
+import Logo from "../../images/final_logo.png"
 import MapImg from "../../images/map.png"
 import Shape1 from "../../images/shape1.png"
 import Shape2 from "../../images/shape2.svg"
@@ -24,10 +24,10 @@ const Footer = () => {
               <div className="single-footer-widget">
                 <div className="logo">
                   <Link to="/it-startup">
-                    <img src={Logo} alt="logo"  width={70}/>
+                    <img src={Logo} alt="logo"  width={60}  height={40} />
                   </Link>
                 </div>
-                <p>
+                <p >
                 Digital Polaris is a leading digital marketing agency dedicated to helping businesses of all sizes achieve their online goals. We provide a comprehensive suite of services designed to establish your brand, increase your online visibility, and drive measurable results.
                 </p>
               </div>

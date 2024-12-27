@@ -203,13 +203,13 @@ textarea.form-control {
 
 /* btn btn-primary */
 .btn-primary {
-  color: #ffffff;
-  background-color: #44ce6f;
+  color: green;
+  background: linear-gradient(to bottom, #FF6316, #FF6316 50%, #2F2691);
   box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #ffffff;
-  background: #0e314c;
+  background: #5643B9;
   transform: translateY(-5px);
   box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
@@ -273,9 +273,9 @@ textarea.form-control {
 .btn.btn-secondary {
   text-transform: capitalize;
   border-radius: 0;
-  background-color: #44ce6f;
+  background-color: #FF6316;
   padding: 13px 30px;
-  box-shadow: 5px 5px 5px #a6f5be;
+  box-shadow: 5px 5px 5px #F5B89A;
   margin-right: 5px;
   margin-bottom: 5px;
   font-size: 14px;
@@ -283,11 +283,11 @@ textarea.form-control {
 }
 .btn.btn-secondary::before {
   border-radius: 0;
-  background: #c679e3;
+  background: #5643B9;
 }
 .btn.btn-secondary::after {
   border-radius: 0;
-  background: #c679e3;
+  background: #5643B9;
 }
 .btn.btn-secondary:not(:disabled):not(.disabled).active, .btn.btn-secondary:not(:disabled):not(.disabled):active, .show > .btn.btn-secondary.dropdown-toggle {
   color: #ffffff;
@@ -301,7 +301,7 @@ textarea.form-control {
   color: #ffffff;
 }
 .btn.btn-secondary:hover, .btn.btn-secondary:focus {
-  box-shadow: 5px 5px 5px #e9caf5;
+  box-shadow: 5px 5px 5px ;
 }
 
 /* Form control */
@@ -372,8 +372,8 @@ label {
 }
 .section-title .sub-title {
   display: inline-block;
-  color: #c679e3;
-  background-color: #f5dffd;
+  color: white;
+  background-color: #FF6316;
   margin-bottom: 18px;
   border-radius: 30px;
   padding: 5px 20px 4px;
@@ -1095,7 +1095,7 @@ Boxes CSS
   line-height: 55px;
   background: #cdf1d8;
   border-radius: 50%;
-  color: #44ce6f;
+  color: #FF6316;
   transition: 0.5s;
 }
 .single-box h3 {
@@ -7560,7 +7560,7 @@ Our Solutions CSS
   z-index: 1;
 }
 .solutions-box .icon {
-  color: #44ce6f;
+  color: #FF6316;
   position: relative;
   z-index: 1;
   margin-bottom: 30px;
@@ -7627,8 +7627,8 @@ Agency About CSS
 }
 .agency-about-content .sub-title {
   display: inline-block;
-  color: #c679e3;
-  background-color: #f5dffd;
+  color: white;
+  background-color: #FF6316;
   margin-bottom: 18px;
   border-radius: 30px;
   padding: 10px 70px 10px;
@@ -7644,7 +7644,7 @@ Agency About CSS
 .agency-about-content .bar {
   height: 5px;
   width: 90px;
-  background: #cdf1d8;
+  background: #FF6316;
   margin: 20px 0;
   position: relative;
   border-radius: 30px;
@@ -7657,7 +7657,7 @@ Agency About CSS
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background: #44ce6f;
+  background: #2F2691;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -7916,7 +7916,7 @@ Agency CTA CSS
 /*btn-gradient*/
 .btn-gradient {
   color: #ffffff;
-  background: linear-gradient(90deg, #ee0979 0, #ff6a00 100%);
+  background: #FF6316;
   box-shadow: unset !important;
   transform: unset !important;
 }
@@ -7927,7 +7927,7 @@ Agency CTA CSS
   opacity: 0;
   visibility: hidden;
   width: 100%;
-  background: linear-gradient(135deg, #23bdb8 0, #43e794 100%);
+  background: #5643B9;
   left: 0;
   border-radius: 4px;
 }
@@ -8436,44 +8436,62 @@ Go Top CSS
 
 .faq-container {
   display: flex;
-  justify-content: flex-start; /* Align FAQ box to the right */
-  align-items: flex-start; /* Align FAQ and image */
-  gap: 40px; /* Add space between FAQ and image */
+  justify-content: flex-start; /* Align FAQ and image side-by-side */
+  align-items: flex-start; /* Vertically align FAQ content and image */
+  gap: 60px; /* Add spacing between FAQ and image */
   padding: 20px;
-  margin-left : 100px
+  margin-left: 100px;
 }
 
 .faq-content {
-  max-width: 800px; /* Limit width of FAQ content */
-  margin-right: 20px;
+  min-width: 700px;
+  max-width: 800px; /* Restrict FAQ content width */
+  margin-right: 20px; /* Add spacing from the image */
 }
 
 .accordion-item {
   margin-bottom: 1rem;
-  border: none; /* Remove border from FAQ items */
+  border: none; /* Remove border around FAQ items */
 }
 
 .accordion-button {
   background-color: #f9f9f9;
-  box-shadow: none;
-  outline: none;
+  box-shadow: none; /* Remove shadow */
+  outline: none; /* Remove focus outline */
   border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* Optional focus effect */
 }
 
 .accordion-body {
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
-.faq-image {
-  flex-shrink: 0; /* Prevent the image from shrinking */
-  animation: slideIn 0.6s ease; /* Add slide-in animation */
-}
-
-.faq-image img {
-  max-width: 500px; /* Make the image large */
+.faq-box {
+  flex-shrink: 0; /* Prevent the box from resizing */
+  width: 500px; /* Set a fixed width */
+  min-height: 300px; /* Set a fixed width */
+  padding: 20px;
   border-radius: 10px;
+  /* background: linear-gradient(to right, #ff6316, #2f2691); Gradient background */
+  color: white;
+  margin-top : 4rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  animation: fadeIn 0.6s ease; /* Add fade-in animation */
+  text-align: left; /* Align text */
 }
+
+.faq-extended-content {
+  font-size: 1rem; /* Set font size */
+  line-height: 1.5; /* Improve readability */
+}
+
+
 
 @keyframes slideIn {
   from {
