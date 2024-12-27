@@ -28,10 +28,7 @@ const Footer = () => {
                   </Link>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi.
+                Digital Polaris is a leading digital marketing agency dedicated to helping businesses of all sizes achieve their online goals. We provide a comprehensive suite of services designed to establish your brand, increase your online visibility, and drive measurable results.
                 </p>
               </div>
             </div>

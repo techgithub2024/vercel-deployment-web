@@ -26,8 +26,7 @@ const FeedbackStyleThree = () => {
             <h2>Our Clients Feedback</h2>
             <div className="bar"></div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            We build effective strategies to help you reach customers and prospects across the entire web.
             </p>
           </div>
 
@@ -47,10 +46,7 @@ const FeedbackStyleThree = () => {
             <SwiperSlide>
               <div className="single-testimonials-item">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Aliquid ullam harum sit. Accusantium veritatis dolore ducimus
-                  illum, cumque excepturi, autem rerum illo amet placeat odit
-                  corporis!
+                Digital Polaris' expertise and dedication to optimizing our online presence have played a crucial role in amplifying the reach of our foundation's mission. We highly commend Digital Polaris for their exceptional efforts in driving meaningful results and increasing awareness for Sachin Manchanda Foundation.
                 </p>
 
                 <div className="client-info">
@@ -64,8 +60,8 @@ const FeedbackStyleThree = () => {
                     <Icon.Star />
                   </div>
 
-                  <h3>Sarah Taylor</h3>
-                  <span>CEO at Envato</span>
+                  <h3>Sachain Manchandha</h3>
+                  <span>Managing Director</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -73,12 +69,8 @@ const FeedbackStyleThree = () => {
             <SwiperSlide>
               <div className="single-testimonials-item">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Aliquid ullam harum sit. Accusantium veritatis dolore ducimus
-                  illum, cumque excepturi, autem rerum illo amet placeat odit
-                  corporis!
+                Digital Polaris has been instrumental in bringing our ideas to life, and their attention to detail has truly set our online presence apart. We opted for their Magento development services after hearing a lot of positive things about them. We appreciate their dedication, and we're excited about the enhanced experience the website will bring to our customers.
                 </p>
-
                 <div className="client-info">
                   <img src={Client2} alt="client" />
 
@@ -90,8 +82,8 @@ const FeedbackStyleThree = () => {
                     <Icon.Star />
                   </div>
 
-                  <h3>Steven Smith</h3>
-                  <span>CEO at Envato</span>
+                  <h3>Managing Director</h3>
+                  <span>Jewelery Unit</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -99,10 +91,7 @@ const FeedbackStyleThree = () => {
             <SwiperSlide>
               <div className="single-testimonials-item">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Aliquid ullam harum sit. Accusantium veritatis dolore ducimus
-                  illum, cumque excepturi, autem rerum illo amet placeat odit
-                  corporis!
+                Many agencies come in, perform their business, and then go. For example, the Digital Polaris team was originally intended to be used purely by our paid advertising team, but has now been employed in branding and SEO services as well, much to our benefit. In terms of scope, Digital Polaris is unrivalled.
                 </p>
 
                 <div className="client-info">
@@ -116,8 +105,8 @@ const FeedbackStyleThree = () => {
                     <Icon.Star />
                   </div>
 
-                  <h3>James Eva</h3>
-                  <span>CEO at Envato</span>
+                  <h3>Managing Director</h3>
+                  <span>AOne</span>
                 </div>
               </div>
             </SwiperSlide>

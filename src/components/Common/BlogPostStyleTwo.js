@@ -22,8 +22,7 @@ const BlogPostStyleTwo = () => {
             <h2>The News from Our Blog</h2>
             <div className="bar"></div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Grow your online business with our expert insights. Find actionable tips, case studies, and the latest industry trends in our blog.
             </p>
           </div>
 

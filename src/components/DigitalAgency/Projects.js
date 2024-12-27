@@ -24,8 +24,7 @@ const Projects = () => {
             <h2>Proud Projects That Make Us Stand Out</h2>
             <div className="bar"></div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            We've built a reputation for delivering exceptional digital marketing solutions that drive real results. Our client-centric approach and commitment to excellence have led to numerous successful projects and long-term client partnerships.
             </p>
           </div>
         </div>

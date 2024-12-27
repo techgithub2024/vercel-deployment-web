@@ -90,7 +90,7 @@ const WhatWeOffer = () => {
                   <Link to="/service-details">ECOMMERCE SOLUTIONS </Link>
                 </h3>
                 <p>
-                Our brand-building services focus on creating a strong, consistent, and memorable identity for your business. We craft tailored strategies that resonate with your target audience, ensuring your brand stands out in a competitive market. 
+                Our E-Commerce solutions provide seamless websites, tailored E-Commerce marketing strategies, and robust tools to boost your E-Commerce business, ensuring customer engagement, operational efficiency, and impactful growth in today’s competitive online marketplace.
                 </p>
 
                 <Link to="/service-details" className="learn-more-btn">
@@ -128,7 +128,7 @@ const WhatWeOffer = () => {
                   <Link to="/service-details">LEAD GENERATIONS</Link>
                 </h3>
                 <p>
-                Our brand-building services focus on creating a strong, consistent, and memorable identity for your business. We craft tailored strategies that resonate with your target audience, ensuring your brand stands out in a competitive market. 
+                Boost your business with our Lead Generation service, delivering high-quality prospects through tailored strategies. As the best lead generation company, we ensure a steady pipeline of qualified leads to accelerate growth and drive conversions.
                 </p>
 
                 <Link to="/service-details" className="learn-more-btn">
@@ -167,7 +167,7 @@ const WhatWeOffer = () => {
                   <Link to="/service-details">DIGITAL ARTS AND VFX</Link>
                 </h3>
                 <p>
-                Our brand-building services focus on creating a strong, consistent, and memorable identity for your business. We craft tailored strategies that resonate with your target audience, ensuring your brand stands out in a competitive market. 
+                Our Digital Art Services and Visual Effects Services deliver stunning visuals through creative designs, 3D animations, and seamless VFX solutions. Elevate your projects with tailored artistry that transforms ideas into captivating masterpieces.
                 </p>
 
                 <Link to="/service-details" className="learn-more-btn">

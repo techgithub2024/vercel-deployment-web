@@ -61,6 +61,37 @@ const AboutUsContent = () => {
           <img src={Shape5} alt="Shap" />
         </div>
       </div>
+      <div className="agency-about-area" style={{ marginTop: '100px' }}>
+  <div className="container-fluid">
+    <div className="row align-items-center">
+      {/* Content on the left */}
+      <div className="col-lg-6 col-md-12 order-lg-1 order-md-1">
+  <div style={{ marginLeft: '80px' }}>
+    <div className="agency-about-content">
+      <span className="sub-title">Why Choose Us</span>
+
+      <div className="bar"></div>
+      <p>
+      By partnering with us, you gain access to a comprehensive suite of digital marketing services designed to enhance your online visibility, attract new customers, and drive business growth. 
+      </p>
+      <p>
+      We help you build a strong online presence, increase brand awareness, generate high-quality leads, and ultimately boost your revenue. Our data-driven approach ensures that your campaigns are targeted, effective, and deliver measurable results. We're committed to providing exceptional customer service and exceeding your expectations.
+      </p>
+      <Link to="/about" className="btn btn-secondary">
+        Discover More
+      </Link>
+    </div>
+  </div>
+</div>
+      {/* Image on the right */}
+      <div className="col-lg-6 col-md-12 order-lg-2 order-md-2">
+        <div className="agency-about-img">
+          <img src={AgencyAboutImg} alt="About" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </>
   )
 }
