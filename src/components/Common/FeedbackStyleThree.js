@@ -23,10 +23,9 @@ const FeedbackStyleThree = () => {
         <div className="container">
           <div className="section-title st-fs-28">
             <span className="sub-title">Testimonials</span>
-            <h2>Our Clients Feedback</h2>
             <div className="bar"></div>
             <p>
-            We build effective strategies to help you reach customers and prospects across the entire web.
+            We craft powerful, results-driven strategies that connect your brand with customers across the digital landscape, driving engagement and delivering measurable growth at every touchpoint.
             </p>
           </div>
 

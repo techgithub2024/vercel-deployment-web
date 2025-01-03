@@ -4493,8 +4493,9 @@ Page Title CSS
   position: relative;
   z-index: 1;
   background: transparent url(../../images/banner-bg1.jpg) right top no-repeat;
-  padding-top: 190px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  margin-top: 120px;
+  padding-bottom: 30px;
   text-align: center;
 }
 .page-title-area h2 {
@@ -7631,7 +7632,7 @@ Agency About CSS
   background-color: #FF6316;
   margin-bottom: 18px;
   border-radius: 30px;
-  padding: 10px 70px 10px;
+  padding: 10px 10px 10px;
   font-size: 20px;
 }
 .agency-about-content h2 {
@@ -8444,7 +8445,7 @@ Go Top CSS
 }
 
 .faq-content {
-  min-width: 700px;
+  min-width: 400px;
   max-width: 800px; /* Restrict FAQ content width */
   margin-right: 20px; /* Add spacing from the image */
 }
@@ -8477,6 +8478,7 @@ Go Top CSS
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
+  margin-right: 3rem;
   animation: slideIn 0.8s ease-out; /* Apply the animation */
 }
 
@@ -8499,11 +8501,8 @@ Go Top CSS
 
 .faq-box {
   flex: 1;
-  margin-top: 4rem;
-  border: 1px solid #ddd;
   padding: 20px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
   min-height: 400px
 }
 .faq-extended-content {

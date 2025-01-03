@@ -61,8 +61,7 @@ const NavbarStyleFive = () => {
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <Link
-                    to="#" 
-                    onClick={e => e.preventDefault()}
+                    to="/digital-agency" 
                     className="nav-link"
                   >
                     Home 
@@ -71,8 +70,7 @@ const NavbarStyleFive = () => {
 
                 <li className="nav-item">
                   <Link
-                    to="#"
-                    onClick={e => e.preventDefault()}
+                    to="/about-3"
                     className="nav-link"
                   >
                     About
@@ -91,87 +89,77 @@ const NavbarStyleFive = () => {
                   <ul className="dropdown-menu">
                     <li className="nav-item">
                       <Link
-                        to="/feedback"
+                        to="/services-2?name=brand_building"
                         activeClassName="active"
                         onClick={toggleNavbar}
                         className="nav-link"
                       >
-                        SEO SERVICES
+                        Brand Building Page
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link
-                        to="/feedback"
+                        to="/services-2?name=lead_Generation"
                         activeClassName="active"
                         onClick={toggleNavbar}
                         className="nav-link"
                       >
-                        Social Media Marketing Services
+                        Peformance & Lead Generation
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link
-                        to="/feedback"
+                        to="/services-2?name=business_Solutions"
                         activeClassName="active"
                         onClick={toggleNavbar}
                         className="nav-link"
                       >
-                        Pay Per Click Services
+                       Business Solutions
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link
-                        to="/feedback"
+                        to="/services-2?name=marketplace_Management"
                         activeClassName="active"
                         onClick={toggleNavbar}
                         className="nav-link"
                       >
-                        Content Marketing Services
+                        Marketplace Management
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link
-                        to="/feedback"
+                        to="/services-2?name=ecommerce_Solutions"
                         activeClassName="active"
                         onClick={toggleNavbar}
                         className="nav-link"
                       >
-                        Web Development Services
+                       E-commerce Solutions
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link
-                        to="/feedback"
+                        to="/services-2?name=digital_Arts"
                         activeClassName="active"
                         onClick={toggleNavbar}
                         className="nav-link"
                       >
-                       Website Designing Services
+                        Digitals Arts & VFX
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link
-                        to="/feedback"
+                        to="/services-2?name=ar_vr_Solutions"
                         activeClassName="active"
                         onClick={toggleNavbar}
                         className="nav-link"
                       >
-                        Magento Development Services
+                        AR & VR Solutions
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link
-                        to="/feedback"
-                        activeClassName="active"
-                        onClick={toggleNavbar}
-                        className="nav-link"
-                      >
-                        Wordpress Development
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link
-                        to="/feedback"
+                        to="/services-2?name=branding_Services"
                         activeClassName="active"
                         onClick={toggleNavbar}
                         className="nav-link"

@@ -18,8 +18,7 @@ const Team = () => {
             <h2>Our Awesome Team</h2>
             <div className="bar"></div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            We’re a group of passionate, innovative, and dedicated professionals who bring a wealth of expertise in digital marketing. From strategists to creatives, analysts to developers, each member of our team plays a vital role in driving success for our clients.
             </p>
           </div>
         </div>
