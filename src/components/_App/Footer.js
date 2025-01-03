@@ -74,19 +74,19 @@ const Footer = () => {
                 <ul className="list">
                   <li>
         
-                    <Link to="/faq">Tech Services</Link>
+                    <Link to="/faq">Enterprise Software & Digital Solutions</Link>
                   </li>
                   <li>
-                    <Link to="/privacy-policy">SEO Packages</Link>
+                    <Link to="/privacy-policy">Artificial Intelligence & Machine Learning</Link>
                   </li>
                   <li>
-                    <Link to="/term-condition">Website Designing Services</Link>
+                    <Link to="/term-condition">Data Engineering & Analytics</Link>
                   </li>
                   <li>
-                    <Link to="/team">Content Marketing Services</Link>
+                    <Link to="/team">Robotic Process Automation (RPA)</Link>
                   </li>
                   <li>
-                    <Link to="/contact">Branding Services</Link>
+                    <Link to="/contact">Extended Reality (XR) Solutions</Link>
                   </li>
                 </ul>
               </div>

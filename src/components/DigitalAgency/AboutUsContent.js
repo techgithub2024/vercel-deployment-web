@@ -1,7 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import AgencyAboutImg from "../../images/agency-image/agency-about-img.jpg"
+import AgencyAboutImg from "../../images/agency-image/final_why.jpg"
+import AgencyAboutImg1 from "../../images/agency-image/3rd_image.jpg"
+
 
 // Shape Images
 import Shape2 from "../../images/shape2.svg"
@@ -17,7 +19,7 @@ const AboutUsContent = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="agency-about-img">
-                <img src={AgencyAboutImg} alt="About" />
+                <img src={AgencyAboutImg1} alt="About" />
               </div>
             </div>
 

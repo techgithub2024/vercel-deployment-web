@@ -203,8 +203,8 @@ textarea.form-control {
 
 /* btn btn-primary */
 .btn-primary {
-  color: green;
-  background: linear-gradient(to bottom, #FF6316, #FF6316 50%, #2F2691);
+  color: white;
+  background: #FF6316;
   box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -373,7 +373,7 @@ label {
 .section-title .sub-title {
   display: inline-block;
   color: white;
-  background-color: #FF6316;
+  background-color:  #FF6316;
   margin-bottom: 18px;
   border-radius: 30px;
   padding: 5px 20px 4px;
@@ -7560,7 +7560,7 @@ Our Solutions CSS
   z-index: 1;
 }
 .solutions-box .icon {
-  color: #FF6316;
+  color: #2F2691;
   position: relative;
   z-index: 1;
   margin-bottom: 30px;
@@ -8472,20 +8472,40 @@ Go Top CSS
   padding: 1rem;
 }
 
-.faq-box {
-  flex-shrink: 0; /* Prevent the box from resizing */
-  width: 500px; /* Set a fixed width */
-  min-height: 300px; /* Set a fixed width */
+.faq-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 20px;
-  border-radius: 10px;
-  /* background: linear-gradient(to right, #ff6316, #2f2691); Gradient background */
-  color: white;
-  margin-top : 4rem;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-  animation: fadeIn 0.6s ease; /* Add fade-in animation */
-  text-align: left; /* Align text */
+  animation: slideIn 0.8s ease-out; /* Apply the animation */
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Styling for FAQ Content and Box */
+.faq-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.faq-box {
+  flex: 1;
+  margin-top: 4rem;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 400px
+}
 .faq-extended-content {
   font-size: 1rem; /* Set font size */
   line-height: 1.5; /* Improve readability */

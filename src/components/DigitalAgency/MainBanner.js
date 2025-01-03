@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import AgencyBannerImg from "../../images/agency-image/agency-banner-img.jpg"
+import AgencyBannerImg from "../../images/agency-image/testfinal.jpg"
 
 // Shape Images
 import Shape2 from "../../images/shape2.svg"
@@ -27,7 +27,7 @@ const MainBanner = () => {
 
             <div className="col-lg-6 col-md-12">
               <div className="agency-banner-image">
-                <img src={AgencyBannerImg} alt="Agency" />
+                <img src={AgencyBannerImg} width="800px" alt="Agency"  />
               </div>
             </div>
           </div>

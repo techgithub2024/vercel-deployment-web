@@ -7,29 +7,27 @@ const ContactInfo = () => {
       <div className="contact-info-area ptb-80">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="contact-info-box">
-                <div className="icon">
-                  <Icon.Mail />
-                </div>
-                <h3>Mail Here</h3>
-                <p>
-                  <a href="mailto:admin@spet.com">admin@spet.com</a>
-                </p>
-                <p>
-                  <a href="mailto:info@spet.com">info@spet.com</a>
-                </p>
-              </div>
-            </div>
-
+    
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="contact-info-box">
                 <div className="icon">
                   <Icon.MapPin />
                 </div>
-                <h3>Visit Here</h3>
+                <h3>USA</h3>
+                
                 <p>
-                  27 Division St, New York, NY 10002, United States of America
+                253 S Broadway, Hicksville, NY, United States, New York
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="contact-info-box">
+                <div className="icon">
+                  <Icon.MapPin />
+                </div>
+                <h3>INDIA </h3>
+                <p>
+                Ground Floor, Plot No 127, Sector 44, Gurugram, Haryana 122003
                 </p>
               </div>
             </div>
@@ -41,10 +39,10 @@ const ContactInfo = () => {
                 </div>
                 <h3>Call Here</h3>
                 <p>
-                  <a href="tel:+1234567890">+123 456 7890</a>
+                  <a href="tel:+919654160160">+91 9654 160 160</a>
                 </p>
                 <p>
-                  <a href="tel:+2414524526">+241 452 4526</a>
+                  <a href="mailto:info@digitalpolaris.com">info@digitalpolaris.com</a>
                 </p>
               </div>
             </div>
