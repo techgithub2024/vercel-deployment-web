@@ -23,9 +23,9 @@ const DigitalAgencyHomePage = () => (
     <AboutUsContent />
     <OurServices />
     <DigitalAgencyFunFacts />
-    <Projects />
+    {/* <Projects /> */}
     <PricingStyleThree />
-    <FeedbackStyleThree />
+    {/* <FeedbackStyleThree /> */}
     <BlogPostStyleTwo />
     <CTAStyleTwo />
     <FAQ/>

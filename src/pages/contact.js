@@ -7,18 +7,17 @@ import PageBanner from "../components/Common/PageBanner"
 import ContactInfo from "../components/Contact/ContactInfo"
 import GoogleMap from "../components/Contact/GoogleMap"
 import ContactForm from "../components/Contact/ContactForm"
+import NavbarStyleFive from "../components/_App/NavbarStyleFive"
 
 const ContactPage = () => (
   <Layout>
-    <Navbar />
+    <NavbarStyleFive />
 
     <PageBanner pageTitle="Contact Us" />
 
     <ContactInfo />
-
-    <GoogleMap />
-
     <ContactForm />
+    <GoogleMap />
 
     <Footer />
   </Layout>

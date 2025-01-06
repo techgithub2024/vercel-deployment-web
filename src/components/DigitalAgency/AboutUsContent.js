@@ -23,7 +23,7 @@ const AboutUsContent = () => {
               </div>
             </div>
 
-            <div className="col-lg-6 col-md-12">
+            <div className="col-lg-6 col-md-12" style={{"marginBottom" : "140px"}}>
               <div className="agency-about-content">
                 <span className="sub-title">About Us</span>
                 <h2>We Don’t Just Market, We Transform!</h2>
@@ -35,7 +35,7 @@ const AboutUsContent = () => {
                 Our team combines creative expertise with data-driven strategies to enhance your brand visibility, connect with your target audience, and deliver measurable results. At the heart of what we do is a commitment to helping businesses thrive in the fast-paced digital world, ensuring their success at every step.
                 </p>
 
-                <Link to="/about" className="btn btn-secondary">
+                <Link to="/about-3" className="btn btn-secondary">
                   Discover More
                 </Link>
               </div>
@@ -67,7 +67,7 @@ const AboutUsContent = () => {
   <div className="container-fluid">
     <div className="row align-items-center">
       {/* Content on the left */}
-      <div className="col-lg-6 col-md-12 order-lg-1 order-md-1">
+      <div className="col-lg-6 col-md-12 order-lg-1 order-md-1" style={{"marginBottom" : "230px"}}>
   <div style={{ marginLeft: '80px' }}>
     <div className="agency-about-content">
       <span className="sub-title">Why Choose Us</span>
@@ -79,9 +79,9 @@ const AboutUsContent = () => {
       <p>
       We help you build a strong online presence, increase brand awareness, generate high-quality leads, and ultimately boost your revenue. Our data-driven approach ensures that your campaigns are targeted, effective, and deliver measurable results. We're committed to providing exceptional customer service and exceeding your expectations.
       </p>
-      <Link to="/about" className="btn btn-secondary">
+      {/* <Link to="/about3" className="btn btn-secondary">
         Discover More
-      </Link>
+      </Link> */}
     </div>
   </div>
 </div>

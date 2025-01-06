@@ -8,7 +8,7 @@ import AgencyShape1 from "../../images/agency-image/agency-shape1.png"
 const WhatWeOffer = () => {
   return (
     <>
-      <div className="solutions-area ptb-80">
+      <div className="solutions-area ptb-83" >
         <div className="container">
           <div className="section-title st-fs-28">
             <span className="sub-title">What We Offer</span>

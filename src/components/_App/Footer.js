@@ -121,7 +121,7 @@ const Footer = () => {
                 <ul className="social-links">
                   <li>
                     <a
-                      href="https://www.facebook.com"
+                      href="https://www.facebook.com/digitalpolaris"
                       className="facebook"
                       target="_blank"
                       rel="noreferrer"
@@ -131,7 +131,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://twitter.com"
+                      href="https://x.com/DigitalPolaris1"
                       className="twitter"
                       target="_blank"
                       rel="noreferrer"
@@ -141,7 +141,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.instagram.com"
+                      href="https://www.instagram.com/digital_polaris/"
                       className="instagram"
                       target="_blank"
                       rel="noreferrer"
@@ -151,7 +151,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.linkedin.com"
+                      href="https://www.linkedin.com/company/digitalpolaris/"
                       className="linkedin"
                       target="_blank"
                       rel="noreferrer"

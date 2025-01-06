@@ -30,7 +30,7 @@ const NavbarStyleFive = () => {
     : "navbar-toggler navbar-toggler-right"
 
   return (
-    <header id="header" className="headroom navbar-style-three">
+    <header id="header" className="headroom navbar-style-three is-sticky">
       <div className="startp-nav">
         <div className="container-fluid">
           <nav className="navbar navbar-expand-md navbar-light">
@@ -39,7 +39,7 @@ const NavbarStyleFive = () => {
               onClick={toggleNavbar}
               className="navbar-brand"
             >
-              <img src={Logo} alt="logo" width={180}/>
+              <img src={Logo} alt="logo" width={130}/>
             </Link>
 
             <button
@@ -171,8 +171,8 @@ const NavbarStyleFive = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    to="#"
-                    onClick={e => e.preventDefault()}
+                    to="/coming-soon"
+                    
                     className="nav-link"
                   >
                    Blog
@@ -180,8 +180,7 @@ const NavbarStyleFive = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    to="#"
-                    onClick={e => e.preventDefault()}
+                    to="/about-2"
                     className="nav-link"
                   >
                    Career

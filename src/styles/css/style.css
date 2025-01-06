@@ -446,10 +446,11 @@ Navbar CSS
 #header.headroom {
   position: fixed;
   width: 100%;
-  z-index: 9999;
+  z-index: 1000;
   top: 0;
   left: 0;
   background-color: transparent;
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   transition: 0.3s;
   padding-top: 15px;
 }
@@ -461,7 +462,7 @@ Navbar CSS
 }
 #header.headroom.navbar-style-two {
   background-color: #ffffff;
-  padding-top: 15px;
+  padding-top: 17px;
   padding-bottom: 15px;
 }
 #header.headroom--pinned {
@@ -472,9 +473,61 @@ Navbar CSS
   opacity: 0;
   visibility: hidden;
 }
+.services-details-area {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.services-details-desc {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services-details-desc h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.services-details-desc ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.services-details-desc ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.separate {
+  margin-top: 40px;
+  border-top: 1px solid #eaeaea;
+}
+
+@media (max-width: 768px) {
+  .services-details-area {
+    padding: 40px 10px;
+  }
+
+  .services-details-desc {
+    padding: 15px;
+  }
+
+  .services-details-desc h4 {
+    font-size: 20px;
+  }
+
+  .services-details-desc ul li {
+    font-size: 14px;
+  }
+}
+
 
 .startp-nav {
-  background: transparent;
+  background-color: transparent;
 }
 .startp-nav nav {
   padding: 0;
@@ -518,10 +571,10 @@ Navbar CSS
   width: 250px;
   display: block;
   z-index: 99;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   opacity: 0;
   border-radius: 5px;
   visibility: hidden;
@@ -1627,13 +1680,14 @@ Services Details CSS
   border-top: 1px solid #e1e1e1;
 }
 
-.services-details-area .separate {
+/* .services-details-area .separate {
   margin-top: 80px;
-}
+} */
 
 .services-details-image {
   text-align: center;
 }
+
 
 /*================================================
 Features CSS
@@ -5587,19 +5641,27 @@ Project Details CSS
 Contact CSS
 =================================================*/
 .contact-info-box {
+  display: flex;
+  align-items: center;
   text-align: center;
   transition: 0.4s;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   background: #ffffff;
   padding: 30px;
 }
+.content {
+  flex: 1; 
+  padding-left: 10px; 
+}
 .contact-info-box .icon {
   display: inline-block;
+  flex: 0 0 10%; 
+  text-align: center;
   width: 65px;
   height: 65px;
   line-height: 62px;
-  background: #f7fafd;
-  border-radius: 50%;
+  /* background: #f7fafd; */
+  /* border-radius: 50%; */
   font-size: 30px;
   color: #44ce6f;
   transition: 0.4s;
@@ -5614,16 +5676,16 @@ Contact CSS
 .contact-info-box p a {
   color: #6084a4;
 }
-.contact-info-box p a:hover {
+/* .contact-info-box p a:hover {
   color: #44ce6f;
-}
-.contact-info-box:hover {
+} */
+/* .contact-info-box:hover {
   transform: translateY(-10px);
-}
-.contact-info-box:hover .icon {
+} */
+/* .contact-info-box:hover .icon {
   color: #ffffff;
   background: #44ce6f;
-}
+} */
 
 #map {
   height: 500px;
@@ -6941,7 +7003,7 @@ ML Partner CSS
 Our Solutions CSS
 =================================================*/
 .solutions-area {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   position: relative;
   z-index: 1;
 }
@@ -7632,7 +7694,7 @@ Agency About CSS
   background-color: #FF6316;
   margin-bottom: 18px;
   border-radius: 30px;
-  padding: 10px 10px 10px;
+  padding: 10px 30px 10px;
   font-size: 20px;
 }
 .agency-about-content h2 {
@@ -8481,60 +8543,74 @@ Go Top CSS
   margin-right: 3rem;
   animation: slideIn 0.8s ease-out; /* Apply the animation */
 }
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.services-details-area {
+  padding: 20px 10px;
 }
 
-/* Styling for FAQ Content and Box */
-.faq-content {
-  flex: 1;
-  margin-right: 20px;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
 }
 
-.faq-box {
-  flex: 1;
-  padding: 20px;
- 
-  min-height: 400px
-}
-.faq-extended-content {
-  font-size: 1rem; /* Set font size */
-  line-height: 1.5; /* Improve readability */
+.single-card {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
+.single-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover effect */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
 
+.single-card h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
-@keyframes slideIn {
-  from {
-    transform: translateX(100px); /* Start off-screen */
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.section-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.section-content p::before {
+  content: "•"; /* Custom bullet */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  color: #007bff; /* Blue color */
+}
+
+.responsibilities {
+  text-align: left; /* Align responsibilities to the left */
+}
+
+.responsibilities p {
+  font-weight: normal; /* Less bold font for responsibilities */
 }
 
 @media (max-width: 768px) {
-  .faq-container {
-    flex-direction: column; /* Stack items on smaller screens */
-    align-items: center;
+  .single-card {
+    padding: 20px;
   }
 
-  .faq-content {
-    max-width: 100%; /* Expand FAQ width */
-    margin-right: 0;
+  .section-content p {
+    font-size: 0.9rem;
   }
 
-  .faq-image img {
-    max-width: 90%; /* Scale down the image */
+  .single-card h4 {
+    font-size: 1.25rem;
   }
 }

@@ -20,10 +20,11 @@ import ClientImg2 from "../images/client-image/client2.jpg"
 import ClientImg3 from "../images/client-image/client3.jpg"
 import ClientImg4 from "../images/client-image/client4.jpg"
 import ClientImg5 from "../images/client-image/client5.jpg"
+import NavbarStyleFive from "../components/_App/NavbarStyleFive"
 
 const BlogDetailsPage = () => (
   <Layout>
-    <Navbar />
+    <NavbarStyleFive />
 
     <PageBanner pageTitle="Blog Details" />
 
