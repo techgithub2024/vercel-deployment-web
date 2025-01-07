@@ -22,9 +22,11 @@ import Shape4 from "../images/shape4.svg";
 import Modal from "../components/Modal/modal";
 
 const ServicesPage2 = () => {
-  const queryString = window.location.search;
-  const searchParams = new URLSearchParams(queryString);
-  const query = searchParams.get("name");
+  if (typeof window !== 'undefined') {
+    const queryString = window.location.search;
+    const searchParams = new URLSearchParams(queryString);
+    const query = searchParams.get("name");
+  }
   const pageTitles = {
     brand_building: "Brand Building",
     social_media: "Social Media Marketing Services",
