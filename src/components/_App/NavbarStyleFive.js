@@ -94,7 +94,7 @@ const NavbarStyleFive = () => {
                         onClick={toggleNavbar}
                         className="nav-link"
                       >
-                        Brand Building Page
+                        Brand Building 
                       </Link>
                     </li>
                     <li className="nav-item">
@@ -155,16 +155,6 @@ const NavbarStyleFive = () => {
                         className="nav-link"
                       >
                         AR & VR Solutions
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link
-                        to="/services-2?name=branding_Services"
-                        activeClassName="active"
-                        onClick={toggleNavbar}
-                        className="nav-link"
-                      >
-                        Branding Services
                       </Link>
                     </li>
                   </ul>
