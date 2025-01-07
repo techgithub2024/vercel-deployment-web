@@ -22,11 +22,11 @@ import Shape4 from "../images/shape4.svg";
 import Modal from "../components/Modal/modal";
 
 const ServicesPage2 = () => {
-  let query = ''; // Declare globally
+  let query = ''; 
   if (typeof window !== 'undefined') {
     const queryString = window.location.search;
     const searchParams = new URLSearchParams(queryString);
-    query = searchParams.get("name"); // Assign to the globally scoped variable
+    query = searchParams.get("name");
   }
   const pageTitles = {
     brand_building: "Brand Building",

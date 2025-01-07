@@ -19,7 +19,12 @@ import ContactForm from "../components/Contact/ContactForm"
 import Apply from "../components/Contact/Apply"
 
 const ServiceDetailsPage = () => {
-;
+  let query = ''; // Declare globally
+  if (typeof window !== 'undefined') {
+    const queryString = window.location.search;
+    const searchParams = new URLSearchParams(queryString);
+    query = searchParams.get("jd"); 
+  }
   const perks = [
     "Health Insurance",
     "Work from Home Option",
@@ -34,6 +39,7 @@ const ServiceDetailsPage = () => {
     "Must have a strong analytical mindset",
   ];
   
+  console.log(query)
   let jd, responsibilities;
 
   if (query === "dme") {
@@ -80,6 +86,7 @@ const ServiceDetailsPage = () => {
                   <p key={index}>{responsibility}</p>
                 ))}
               </div>
+
             </div>
           </div>
         </div>
