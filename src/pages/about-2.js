@@ -13,9 +13,12 @@ import AboutImg from "../images/about4.png"
 import NavbarStyleFive from "../components/_App/NavbarStyleFive"
 
 const AboutUsPage2 = () => {
-  const queryString = window.location.search;
-  const searchParams = new URLSearchParams(queryString);
-  const query = searchParams.get("name");
+  let query = ''; 
+  if (typeof window !== 'undefined') {
+    const queryString = window.location.search;
+    const searchParams = new URLSearchParams(queryString);
+    query = searchParams.get("name");
+  }
 
 
 return (
