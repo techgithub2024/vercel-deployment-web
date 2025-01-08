@@ -20,7 +20,6 @@ const AboutUsPage2 = () => {
     query = searchParams.get("name");
   }
 
-
 return (
   <Layout>
     <NavbarStyleFive />
@@ -38,7 +37,6 @@ return (
 
           <div className="col-lg-6 col-md-12">
             <div className="ml-about-content">
-              <span className="sub-title">Join Our Team</span>
               <h2>A Culture of Innovation, Collaboration, and Passion</h2>
               <div className="bar"></div>
 

@@ -71,7 +71,7 @@ const WhatWeOffer = () => {
                   <Link to="/service-details">BUSINESS SOLUTIONS </Link>
                 </h3>
                 <p>
-                Our business solutions optimize efficiency and growth through automation, reporting, and tailored strategies. We enhance decision-making, streamline operations, and empower your company to achieve its goals and stay competitive in a dynamic market.
+                Our business solutions drive efficiency and growth through automation, reporting, and customized strategies, enhancing decision-making, streamlining operations, and empowering your company to stay competitive in a dynamic market.
                 </p>
 
                 <Link to="/service-details" className="learn-more-btn">
@@ -90,7 +90,7 @@ const WhatWeOffer = () => {
                   <Link to="/service-details">ECOMMERCE SOLUTIONS </Link>
                 </h3>
                 <p>
-                Our E-Commerce solutions provide seamless websites, tailored E-Commerce marketing strategies, and robust tools to boost your E-Commerce business, ensuring customer engagement, operational efficiency, and impactful growth in today’s competitive online marketplace.
+                Our E-commerce solutions provide seamless websites, customized marketing strategies, and powerful tools to boost customer engagement, enhance operational efficiency, and drive sustainable growth in today's competitive online marketplace.
                 </p>
 
                 <Link to="/service-details" className="learn-more-btn">
@@ -109,7 +109,7 @@ const WhatWeOffer = () => {
                   <Link to="/service-details">MARKETPLACE  MANAGEMENT</Link>
                 </h3>
                 <p>
-                Our marketplace management services optimize your e-commerce presence, handling product listings, inventory, pricing, and customer engagement. We boost visibility, increase sales, and streamline operations to maximize performance and drive business growth.
+                Our marketplace management services optimize product listings, inventory, pricing, and customer engagement to boost visibility, increase sales, streamline operations, and drive business growth for your e-commerce presence.
                 </p>
 
                 <Link to="/service-details" className="learn-more-btn">
@@ -147,7 +147,7 @@ const WhatWeOffer = () => {
                   <Link to="/service-details">AR AND VR SERVICES </Link>
                 </h3>
                 <p>
-                We offer immersive AR & VR solutions, creating interactive experiences like virtual tours, product demos, and training environments. These cutting-edge technologies enhance engagement, boost brand visibility, and create lasting connections with your audience.
+                We provide immersive AR & VR solutions, creating interactive experiences like virtual tours, product demos, and training environments to boost engagement, brand visibility, and foster lasting connections with your audience.
                 </p>
 
                 <Link to="/service-details" className="learn-more-btn">

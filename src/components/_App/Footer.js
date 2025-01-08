@@ -23,12 +23,12 @@ const Footer = () => {
             >
               <div className="single-footer-widget">
                 <div className="logo">
-                  <Link to="/it-startup">
+                  <Link to="/digital-agency">
                     <img src={Logo} alt="logo"  width={60}  height={40} />
                   </Link>
                 </div>
                 <p >
-                Digital Polaris is a leading digital marketing agency dedicated to helping businesses of all sizes achieve their online goals. We provide a comprehensive suite of services designed to establish your brand, increase your online visibility, and drive measurable results.
+                Digital Polaris is a leading digital marketing agency dedicated to helping businesses of all sizes achieve their online goals.
                 </p>
               </div>
             </div>
@@ -44,19 +44,16 @@ const Footer = () => {
                 <h3>Company</h3>
                 <ul className="list">
                   <li>
-                    <Link to="/about-1">About Us</Link>
+                    <Link to="/digital-agency">Home</Link>
                   </li>
                   <li>
-                    <Link to="/services-1">Case Studies</Link>
+                    <Link to="/about-3">About</Link>
                   </li>
                   <li>
-                    <Link to="/features">Blog</Link>
+                    <Link to="/coming-soon">Blog</Link>
                   </li>
                   <li>
-                    <Link to="/pricing">Privacy Policy</Link>
-                  </li>
-                  <li>
-                    <Link to="/blog-1">Terms and Conditions</Link>
+                    <Link to="/about-2">Career</Link>
                   </li>
                 </ul>
               </div>
@@ -74,19 +71,25 @@ const Footer = () => {
                 <ul className="list">
                   <li>
         
-                    <Link to="/faq">Enterprise Software & Digital Solutions</Link>
+                    <Link to="/services-2/?name=brand_building">Brand Building</Link>
                   </li>
                   <li>
-                    <Link to="/privacy-policy">Artificial Intelligence & Machine Learning</Link>
+                    <Link to="/services-2/?name=lead_Generation">Performance and Lead Generation</Link>
                   </li>
                   <li>
-                    <Link to="/term-condition">Data Engineering & Analytics</Link>
+                    <Link to="/services-2/?name=business_Solutions">Business Solutions</Link>
                   </li>
                   <li>
-                    <Link to="/team">Robotic Process Automation (RPA)</Link>
+                    <Link to="/services-2/?name=marketplace_Management">Marketplace Management</Link>
                   </li>
                   <li>
-                    <Link to="/contact">Extended Reality (XR) Solutions</Link>
+                    <Link to="/services-2/?name=ecommerce_Solutions">E-commerce Solutions</Link>
+                  </li>
+                  <li>
+                    <Link to="/services-2/?name=digital_Arts">Digitals Art and VFX</Link>
+                  </li>
+                  <li>
+                    <Link to="/services-2/?name=ar_vr_Solutions">AR AND VR SOLUTIONS</Link>
                   </li>
                 </ul>
               </div>
