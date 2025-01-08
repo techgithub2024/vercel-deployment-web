@@ -30,7 +30,7 @@ const NavbarStyleFive = () => {
     : "navbar-toggler navbar-toggler-right"
 
   return (
-    <header id="header" className="headroom navbar-style-three is-sticky">
+    <header id="header" className="headroom navbar-style-three ">
       <div className="startp-nav">
         <div className="container-fluid">
           <nav className="navbar navbar-expand-md navbar-light">
