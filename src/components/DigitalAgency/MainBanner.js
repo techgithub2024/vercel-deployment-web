@@ -17,7 +17,7 @@ const MainBanner = () => {
             <div className="col-lg-6 col-md-12" style={{marginTop : "10rem"}}>
               <div className="agency-banner-content">
                 <span className="sub-title">We blend creativity &</span>
-                <h1> Digital Marketing</h1>
+                <h1> Digital Agency</h1>
                 <p>Take your business to new heights with our creative, powerful, and result-driven digital marketing services designed to enhance your brand's presence and drive growth!</p>
                 <Link to="/contact" className="btn btn-secondary">
                   Get Started
