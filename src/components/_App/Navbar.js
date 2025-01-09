@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
 
-import Logo from "../../images/logo.jpg"
+import final_logo from "../../images/agency-image/final_logo.png"
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
@@ -35,11 +35,11 @@ const Navbar = () => {
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
             <Link
-              to="/it-startup"
+              to="/digital-agency"
               onClick={toggleNavbar}
               className="navbar-brand"
             >
-              <img src={Logo} alt="logo"  width={180}/>
+              <img src={final_logo} alt="logo"  width={180}/>
             </Link>
 
             <button

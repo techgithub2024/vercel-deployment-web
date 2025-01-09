@@ -27,7 +27,7 @@ const MainBanner = () => {
 
             <div className="col-lg-6 col-md-12">
               <div className="agency-banner-image">
-                <img src={AgencyBannerImg} width="600px" alt="Agency"  />
+                <img src={AgencyBannerImg} width="" alt="Agency"  />
               </div>
             </div>
           </div>

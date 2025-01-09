@@ -41,7 +41,7 @@ const BlogPost = () => {
                 <div className="blog-post-content">
                   <h3>
                     <Link to="/blog-details">
-                      The Security Risks of Changing Package Owners
+                    Streamlining Success: Leveraging the Power of SEO Automation Tools
                     </Link>
                   </h3>
 
@@ -50,9 +50,7 @@ const BlogPost = () => {
                   </span>
 
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse.
+                  As search engine optimization (SEO) grows in complexity, marketers are turning to SEO automation tools to handle repetitive tasks and maximize outcomes. These tools allow businesses to manage SEO campaigns .
                   </p>
 
                   <Link to="/blog-details" className="read-more-btn">
@@ -83,18 +81,16 @@ const BlogPost = () => {
                 <div className="blog-post-content">
                   <h3>
                     <Link to="/blog-details">
-                      Tips to Protecting Your Business and Family
+                    Boost Your Website Search Rankings with These Powerful SEO Chrome Extensions
                     </Link>
                   </h3>
 
                   <span>
-                    By <Link to="/author">Smith</Link>
+                    By <Link to="/author">Admin</Link>
                   </span>
 
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse.
+                  SEO can often feel like a relentless chase. Google shifts its algorithms constantly, and keeping pace is no small feat. But with the right tools at your fingertips, optimization becomes simpler and more efficient.
                   </p>
 
                   <Link to="/blog-details" className="read-more-btn">
@@ -125,7 +121,7 @@ const BlogPost = () => {
                 <div className="blog-post-content">
                   <h3>
                     <Link to="/blog-details">
-                      Protect Your Workplace from Cyber Attacks
+                    Outshine the Competition with the Best Social Media Marketing Company in Gurgaon
                     </Link>
                   </h3>
 
@@ -134,9 +130,7 @@ const BlogPost = () => {
                   </span>
 
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse.
+                  Social Media Marketing Company in Gurgaon Tired of blending in with the social media crowd? Ready to turn your brand’s online presence into a powerhouse of engagement and influence?
                   </p>
 
                   <Link to="/blog-details" className="read-more-btn">

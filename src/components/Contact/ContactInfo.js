@@ -13,7 +13,7 @@ const ContactInfo = () => {
     <div className="icon">
       <Icon.MapPin />
     </div>
-    <div className="content">
+    <div className="content" >
       <h3>USA</h3>
       <p>253 S Broadway, Hicksville, NY, United States, New York</p>
     </div>

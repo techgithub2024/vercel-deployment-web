@@ -9,7 +9,7 @@ const WhatWeOffer = () => {
   return (
     <>
       <div className="solutions-area ptb-83" >
-        <div className="container">
+        <div className="container" style={{marginTop : "10%"}}>
           <div className="section-title st-fs-28">
             <span className="sub-title">What We Offer</span>
             <h2>Our Featured Solutions</h2>
@@ -34,13 +34,13 @@ const WhatWeOffer = () => {
                 We offer a full range of digital marketing services to drive growth and maximize ROI, including SEO, SMM, PPC, content marketing, B2B lead generation, email marketing, budget planning, and tailored marketing roadmaps. 
                 </p>
 
-                <Link to="/service-details" className="learn-more-btn">
+                <Link to="/services-2/?name=brand_building" className="learn-more-btn">
                   <Icon.PlusCircle /> Learn More
                 </Link>
               </div>
             </div>
 
-            <div className="col-lg-3 col-sm-6 col-md-6">
+            {/* <div className="col-lg-3 col-sm-6 col-md-6">
               <div className="solutions-box">
                 <div className="icon">
                   <i className="bx bx-bar-chart-alt"></i>
@@ -58,7 +58,7 @@ const WhatWeOffer = () => {
                   <Icon.PlusCircle /> Learn More
                 </Link>
               </div>
-            </div>
+            </div> */}
 
             <div className="col-lg-3 col-sm-6 col-md-6">
               <div className="solutions-box">
@@ -68,18 +68,18 @@ const WhatWeOffer = () => {
                 </div>
 
                 <h3>
-                  <Link to="/service-details">BUSINESS SOLUTIONS </Link>
+                  <Link to="/services-2/?name=business_Solutions">BUSINESS SOLUTIONS </Link>
                 </h3>
                 <p>
                 Our business solutions drive efficiency and growth through automation, reporting, and customized strategies, enhancing decision-making, streamlining operations, and empowering your company to stay competitive in a dynamic market.
                 </p>
 
-                <Link to="/service-details" className="learn-more-btn">
+                <Link to="/services-2/?name=business_Solutions" className="learn-more-btn">
                   <Icon.PlusCircle /> Learn More
                 </Link>
               </div>
             </div>
-            <div className="col-lg-3 col-sm-6 col-md-6">
+            {/* <div className="col-lg-3 col-sm-6 col-md-6">
               <div className="solutions-box">
                 <div className="icon">
                   <i className="bx bx-devices"></i>
@@ -97,8 +97,8 @@ const WhatWeOffer = () => {
                   <Icon.PlusCircle /> Learn More
                 </Link>
               </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 col-md-6">
+            </div> */}
+            {/* <div className="col-lg-3 col-sm-6 col-md-6">
               <div className="solutions-box">
                 <div className="icon">
                   <i className="bx bx-devices"></i>
@@ -116,8 +116,8 @@ const WhatWeOffer = () => {
                   <Icon.PlusCircle /> Learn More
                 </Link>
               </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 col-md-6">
+            </div> */}
+            {/* <div className="col-lg-3 col-sm-6 col-md-6">
               <div className="solutions-box">
                 <div className="icon">
                   <i className="bx bx-devices"></i>
@@ -135,7 +135,7 @@ const WhatWeOffer = () => {
                   <Icon.PlusCircle /> Learn More
                 </Link>
               </div>
-            </div>
+            </div> */}
             <div className="col-lg-3 col-sm-6 col-md-6">
               <div className="solutions-box">
                 <div className="icon">
@@ -144,13 +144,13 @@ const WhatWeOffer = () => {
                 </div>
 
                 <h3>
-                  <Link to="/service-details">AR AND VR SERVICES </Link>
+                  <Link to="/services-2/?name=ar_vr_Solutions">AR AND VR SERVICES </Link>
                 </h3>
                 <p>
                 We provide immersive AR & VR solutions, creating interactive experiences like virtual tours, product demos, and training environments to boost engagement, brand visibility, and foster lasting connections with your audience.
                 </p>
 
-                <Link to="/service-details" className="learn-more-btn">
+                <Link to="/services-2/?name=ar_vr_Solutions" className="learn-more-btn">
                   <Icon.PlusCircle /> Learn More
                 </Link>
               </div>
@@ -164,13 +164,13 @@ const WhatWeOffer = () => {
                 </div>
 
                 <h3>
-                  <Link to="/service-details">DIGITAL ARTS AND VFX</Link>
+                  <Link to="/services-2/?name=digital_Arts">DIGITAL ARTS AND VFX</Link>
                 </h3>
                 <p>
                 Our Digital Art Services and Visual Effects Services deliver stunning visuals through creative designs, 3D animations, and seamless VFX solutions. Elevate your projects with tailored artistry that transforms ideas into captivating masterpieces.
                 </p>
 
-                <Link to="/service-details" className="learn-more-btn">
+                <Link to="/services-2/?name=digital_Arts" className="learn-more-btn">
                   <Icon.PlusCircle /> Learn More
                 </Link>
               </div>

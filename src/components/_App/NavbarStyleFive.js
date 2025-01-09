@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
 
-import Logo from "../../images/final_logo.png"
+import Logo from "../../images/agency-image/final_logo.png"
 
 const NavbarStyleFive = () => {
   const [menu, setMenu] = React.useState(true)
@@ -70,11 +70,44 @@ const NavbarStyleFive = () => {
 
                 <li className="nav-item">
                   <Link
-                    to="/about-3"
+                    to="#"
+                    onClick={e => e.preventDefault()}
                     className="nav-link"
                   >
-                    About
+                    About <Icon.ChevronDown />
                   </Link>
+
+                  <ul className="dropdown-menu">
+                    <li className="nav-item">
+                      <Link
+                        to="/about-3"
+                        activeClassName="active"
+                        onClick={toggleNavbar}
+                        className="nav-link"
+                      >
+                         WHO WE ARE 
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        to="/about-1"
+                        activeClassName="active"
+                        onClick={toggleNavbar}
+                        className="nav-link"
+                      >
+                        OUR MISSION
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        to="/about-2"
+                        activeClassName="active"
+                        onClick={toggleNavbar}
+                        className="nav-link">
+                     OUR VISION
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
 
                 <li className="nav-item">
@@ -161,7 +194,7 @@ const NavbarStyleFive = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    to="/coming-soon"
+                    to="/blog-1"
                     
                     className="nav-link"
                   >

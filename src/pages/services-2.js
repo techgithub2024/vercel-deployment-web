@@ -428,7 +428,7 @@ const ServicesPage2 = () => {
                     <img src={service.image} alt="Service"  style={{height : "80px"}} />
                   </div>
                   <h3>
-                    <Link to="/service-details">{service.title}</Link>
+                   {service.title}
                   </h3>
                   <p>{service.description}</p>
                 </div>

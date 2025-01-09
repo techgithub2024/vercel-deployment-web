@@ -18,7 +18,7 @@ const BlogPostStyleTwo = () => {
       <div className="blog-area pt-80 pb-50">
         <div className="container">
           <div className="section-title st-fs-28">
-            <span className="sub-title">News</span>
+            <span className="sub-title">Blog</span>
             <h2>The News from Our Blog</h2>
             <div className="bar"></div>
             <p>
@@ -31,7 +31,7 @@ const BlogPostStyleTwo = () => {
               <div className="single-blog-post-item">
                 <div className="post-image">
                   <Link to="/blog-details">
-                    <img src={BlogImg1} alt="Blog Post" />
+                    <img src="https://digitalpolaris.com/wp-content/uploads/2024/09/SEO-Automation-Tools.webp" alt="Blog Post" />
                   </Link>
                 </div>
 
@@ -45,7 +45,7 @@ const BlogPostStyleTwo = () => {
 
                   <h3>
                     <Link to="/blog-details">
-                      The security risks of changing package owners
+                    Streamlining Success: Leveraging the Power of SEO Automation Tools
                     </Link>
                   </h3>
 
@@ -59,8 +59,8 @@ const BlogPostStyleTwo = () => {
             <div className="col-lg-4 col-md-6">
               <div className="single-blog-post-item">
                 <div className="post-image">
-                  <Link to="/blog-details">
-                    <img src={BlogImg2} alt="Blog Post" />
+                  <Link to="/blog-1/">
+                    <img src="https://digitalpolaris.com/wp-content/uploads/2024/09/SEO-Chrome-Extensions.webp" alt="Blog Post" />
                   </Link>
                 </div>
 
@@ -73,12 +73,12 @@ const BlogPostStyleTwo = () => {
                   </ul>
 
                   <h3>
-                    <Link to="/blog-details">
-                      Tips to Protecting Your Business and Family
+                    <Link to="/blog-1/">
+                    Outshine the Competition with the Best Social Media Marketing Company in Gurgaon
                     </Link>
                   </h3>
 
-                  <Link to="/blog-details" className="read-more-btn">
+                  <Link to="/blog-1/" className="read-more-btn">
                     Read More <Icon.PlusCircle />
                   </Link>
                 </div>
@@ -88,8 +88,8 @@ const BlogPostStyleTwo = () => {
             <div className="col-lg-4 col-md-6">
               <div className="single-blog-post-item">
                 <div className="post-image">
-                  <Link to="/blog-details">
-                    <img src={BlogImg3} alt="Blog Post" />
+                  <Link to="/blog-1">
+                    <img src="https://digitalpolaris.com/wp-content/uploads/2024/08/Social-Media-Marketing-Company-in-Gurgaon-1.jpg" alt="Blog Post" />
                   </Link>
                 </div>
 

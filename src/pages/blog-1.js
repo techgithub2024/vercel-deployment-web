@@ -13,12 +13,13 @@ import BlogImg3 from "../images/blog-image/blog3.jpg"
 import BlogImg4 from "../images/blog-image/blog4.jpg"
 import BlogImg5 from "../images/blog-image/blog5.jpg"
 import BlogImg6 from "../images/blog-image/blog6.jpg"
+import NavbarStyleFive from "../components/_App/NavbarStyleFive"
 
 const BlogPage = () => (
   <Layout>
-    <Navbar />
+    <NavbarStyleFive />
 
-    <PageBanner pageTitle="Blog Grid" />
+    <PageBanner pageTitle="Blog Page" />
 
     <div className="blog-area ptb-80">
       <div className="container">
@@ -27,7 +28,7 @@ const BlogPage = () => (
             <div className="single-blog-post">
               <div className="blog-image">
                 <Link to="/blog-details">
-                  <img src={BlogImg1} alt="Post" />
+                  <img src='https://digitalpolaris.com/wp-content/uploads/2024/09/SEO-Automation-Tools.webp' alt="Post" />
                 </Link>
 
                 <div className="date">
@@ -38,7 +39,8 @@ const BlogPage = () => (
               <div className="blog-post-content">
                 <h3>
                   <Link to="/blog-details">
-                    The Security Risks of Changing Package Owners
+                   
+Streamlining Success: Leveraging the Power of SEO Automation Tools
                   </Link>
                 </h3>
 
@@ -47,9 +49,7 @@ const BlogPage = () => (
                 </span>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida.
+                As search engine optimization (SEO) grows in complexity, marketers are turning to SEO automation tools to handle repetitive tasks and maximize outcomes. These tools allow businesses to manage SEO campaigns .
                 </p>
 
                 <Link to="/blog-details" className="read-more-btn">
@@ -63,7 +63,7 @@ const BlogPage = () => (
             <div className="single-blog-post">
               <div className="blog-image">
                 <Link to="/blog-details">
-                  <img src={BlogImg2} alt="Post" />
+                  <img src="https://digitalpolaris.com/wp-content/uploads/2024/09/SEO-Chrome-Extensions.webp" alt="Post" />
                 </Link>
 
                 <div className="date">
@@ -74,79 +74,7 @@ const BlogPage = () => (
               <div className="blog-post-content">
                 <h3>
                   <Link to="/blog-details">
-                    Tips to Protecting Your Business and Family
-                  </Link>
-                </h3>
-
-                <span>
-                  By <Link to="/author">Smith</Link>
-                </span>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida.
-                </p>
-
-                <Link to="/blog-details" className="read-more-btn">
-                  Read More <Icon.ArrowRight />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-4 col-md-6">
-            <div className="single-blog-post">
-              <div className="blog-image">
-                <Link to="/blog-details">
-                  <img src={BlogImg3} alt="Post" />
-                </Link>
-
-                <div className="date">
-                  <Icon.Calendar /> March 19, 2023
-                </div>
-              </div>
-
-              <div className="blog-post-content">
-                <h3>
-                  <Link to="/blog-details">
-                    Protect Your Workplace from Cyber Attacks
-                  </Link>
-                </h3>
-
-                <span>
-                  By <Link to="/author">John</Link>
-                </span>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida.
-                </p>
-
-                <Link to="/blog-details" className="read-more-btn">
-                  Read More <Icon.ArrowRight />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-4 col-md-6">
-            <div className="single-blog-post">
-              <div className="blog-image">
-                <Link to="/blog-details">
-                  <img src={BlogImg4} alt="Post" />
-                </Link>
-
-                <div className="date">
-                  <Icon.Calendar /> March 15, 2023
-                </div>
-              </div>
-
-              <div className="blog-post-content">
-                <h3>
-                  <Link to="/blog-details">
-                    Here are the 5 most telling signs of micromanagement
+                  Boost Your Website Search Rankings with These Powerful SEO Chrome Extensions
                   </Link>
                 </h3>
 
@@ -155,9 +83,7 @@ const BlogPage = () => (
                 </span>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida.
+                SEO can often feel like a relentless chase. Google shifts its algorithms constantly, and keeping pace is no small feat. But with the right tools at your fingertips, optimization becomes simpler and more efficient.
                 </p>
 
                 <Link to="/blog-details" className="read-more-btn">
@@ -171,43 +97,7 @@ const BlogPage = () => (
             <div className="single-blog-post">
               <div className="blog-image">
                 <Link to="/blog-details">
-                  <img src={BlogImg5} alt="Post" />
-                </Link>
-
-                <div className="date">
-                  <Icon.Calendar /> March 17, 2023
-                </div>
-              </div>
-
-              <div className="blog-post-content">
-                <h3>
-                  <Link to="/blog-details">
-                    I Used The Web For A Day On A 50 MB Budget
-                  </Link>
-                </h3>
-
-                <span>
-                  By <Link to="/author">Smith</Link>
-                </span>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida.
-                </p>
-
-                <Link to="/blog-details" className="read-more-btn">
-                  Read More <Icon.ArrowRight />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-4 col-md-6">
-            <div className="single-blog-post">
-              <div className="blog-image">
-                <Link to="/blog-details">
-                  <img src={BlogImg6} alt="Post" />
+                  <img src="https://digitalpolaris.com/wp-content/uploads/2024/08/Social-Media-Marketing-Company-in-Gurgaon-1.jpg" alt="Post" />
                 </Link>
 
                 <div className="date">
@@ -218,18 +108,16 @@ const BlogPage = () => (
               <div className="blog-post-content">
                 <h3>
                   <Link to="/blog-details">
-                    Making Peace With The Feast Or Famine Of Freelancing
+                  Outshine the Competition with the Best Social Media Marketing Company in Gurgaon
                   </Link>
                 </h3>
 
                 <span>
-                  By <Link to="/author">John</Link>
+                  By <Link to="/author">Admin</Link>
                 </span>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida.
+                Social Media Marketing Company in Gurgaon Tired of blending in with the social media crowd? Ready to turn your brand’s online presence into a powerhouse of engagement and influence?
                 </p>
 
                 <Link to="/blog-details" className="read-more-btn">
@@ -240,7 +128,7 @@ const BlogPage = () => (
           </div>
 
           {/* Pagination */}
-          <div className="col-lg-12 col-md-12">
+          {/* <div className="col-lg-12 col-md-12">
             <div className="pagination-area">
               <nav aria-label="Page navigation">
                 <ul className="pagination justify-content-center">
@@ -276,7 +164,7 @@ const BlogPage = () => (
                 </ul>
               </nav>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

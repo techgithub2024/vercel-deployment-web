@@ -3293,7 +3293,7 @@ Blog CSS
   position: absolute;
   left: 20px;
   bottom: -20px;
-  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+  background: #ff6361;
   color: #ffffff;
   padding: 8px 16px;
   font-size: 13px;
@@ -4495,9 +4495,8 @@ Page Title CSS
   position: relative;
   z-index: 1;
   background: transparent url(../../images/banner-bg1.jpg) right top no-repeat;
-  padding-top: 30px;
-  margin-top: 120px;
-  padding-bottom: 30px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   text-align: center;
 }
 .page-title-area h2 {
@@ -4505,7 +4504,6 @@ Page Title CSS
   font-weight: 700;
   margin: 0;
 }
-
 /*================================================
 FAQ CSS
 =================================================*/
@@ -8453,6 +8451,7 @@ Go Top CSS
   gap: 60px; /* Add spacing between FAQ and image */
   padding: 20px;
   margin-left: 100px;
+
 }
 
 .faq-content {
@@ -8464,10 +8463,10 @@ Go Top CSS
 .accordion-item {
   margin-bottom: 1rem;
   border: none; /* Remove border around FAQ items */
+
 }
 
 .accordion-button {
-  background-color: #f9f9f9;
   box-shadow: none; /* Remove shadow */
   outline: none; /* Remove focus outline */
   border: none;
@@ -8478,10 +8477,12 @@ Go Top CSS
 
 .accordion-button:focus {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* Optional focus effect */
+
 }
 
 .accordion-body {
   padding: 1rem;
+  min-width: 500px
 }
 
 .faq-container {

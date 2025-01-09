@@ -14,13 +14,16 @@ import BlogPostStyleTwo from "../components/Common/BlogPostStyleTwo"
 import CTAStyleTwo from "../components/Common/CTAStyleTwo"
 import Footer from "../components/_App/Footer"
 import FAQ from "./Faqdesign"
-
-const DigitalAgencyHomePage = () => (
-  <Layout>
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+const DigitalAgencyHomePage = () => {
+  return(
+<Layout>
     <NavbarStyleFive />
     <MainBanner />
     <WhatWeOffer />
-    <AboutUsContent />
+    <AboutUsContent/>
     <OurServices />
     <DigitalAgencyFunFacts />
     {/* <Projects /> */}
@@ -31,7 +34,8 @@ const DigitalAgencyHomePage = () => (
     <FAQ/>
     <Footer />
   </Layout>
-)
+  )
+}
 
 /**
  * Head export to define metadata for the page
