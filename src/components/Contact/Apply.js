@@ -109,7 +109,7 @@ const handleSubmit = (e) => {
         className="form-control"
         accept=".pdf,.docx"
       />
-      <small className="form-text text-muted">Upload resume in  PDF or DOCX file less than 2MB.</small>
+      <small className="form-text text-muted">Resume Upload in pdf or docx . Max-2MB </small>
     </div>
 </div>
                   <div className="col-lg-6 col-md-6">

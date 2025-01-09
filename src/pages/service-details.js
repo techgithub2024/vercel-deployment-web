@@ -93,7 +93,6 @@ const ServiceDetailsPage = () => {
       </div>
     </div>
   </div>
-);
 <Apply/>
     <Footer />
   </Layout>)

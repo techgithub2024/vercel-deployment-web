@@ -63,7 +63,7 @@ const AboutUsContent = () => {
           <img src={Shape5} alt="Shap" />
         </div>
       </div>
-      <div className="agency-about-area" style={{ marginTop: '100px' }}>
+      <div className="agency-about-area" style={{ marginTop: '10%' }}>
   <div className="container-fluid">
     <div className="row align-items-center">
       {/* Content on the left */}

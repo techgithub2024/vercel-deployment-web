@@ -90,7 +90,7 @@ const NavbarStyleFive = () => {
                     </li>
                     <li className="nav-item">
                       <Link
-                        to="/about-1"
+                        to="/ourmission"
                         activeClassName="active"
                         onClick={toggleNavbar}
                         className="nav-link"
@@ -100,11 +100,11 @@ const NavbarStyleFive = () => {
                     </li>
                     <li className="nav-item">
                       <Link
-                        to="/about-2"
+                        to="/ourhistory"
                         activeClassName="active"
                         onClick={toggleNavbar}
                         className="nav-link">
-                     OUR VISION
+                     OUR HISTORY
                       </Link>
                     </li>
                   </ul>

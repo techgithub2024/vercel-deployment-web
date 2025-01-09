@@ -9,7 +9,7 @@ const AboutUsContent = () => {
   return (
     <>
       <div className="agency-portfolio-about-area pt-80 pb-50">
-        <div className="container">
+        <div className="container" >
           <div className="row justify-content-center">
             <div className="col-lg-4 col-sm-6">
               <div className="single-text-box">

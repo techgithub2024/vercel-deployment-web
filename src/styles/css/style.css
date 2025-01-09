@@ -4566,7 +4566,10 @@ FAQ CSS
   padding: 15px 15px;
   border-top: 1px solid #e1e1e1;
 }
-
+.faq-extended-content{
+  width : 500px ; 
+  margin-left : 10px
+}
 .faq-contact {
   margin-top: 45px;
   box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
@@ -5604,6 +5607,7 @@ Contact CSS
   flex: 0 0 10%; 
   text-align: center;
   width: 65px;
+  margin-bottom: 40px;
   height: 65px;
   line-height: 62px;
   /* background: #f7fafd; */
@@ -7617,6 +7621,7 @@ Agency About CSS
 }
 .agency-about-area .container-fluid .row {
   margin-left: 0;
+  margin-top : 5%;
   margin-right: 0;
 }
 .agency-about-area .container-fluid .row .col-lg-6 {
@@ -7630,6 +7635,8 @@ Agency About CSS
 .agency-about-img img {
   width: 100%;
 }
+
+
 
 .agency-about-content {
   max-width: 540px;
@@ -8375,7 +8382,7 @@ Go Top CSS
   bottom: 30px;
   right: 0;
   color: #ffffff;
-  background-color: #c679e3;
+  background-color: #302691;
   width: 45px;
   text-align: center;
   height: 45px;
@@ -8623,3 +8630,4 @@ Go Top CSS
 .single-footer-widget{
   text-align: left;
 }
+

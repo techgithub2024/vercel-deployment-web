@@ -15,7 +15,7 @@ const AboutUsPage = () => (
   <Layout>
     <NavbarStyleFive />
 
-    <PageBanner pageTitle="About Us" />
+    <PageBanner pageTitle="OUR MISSION" />
 
     <div className="about-area ptb-80">
       <div className="container">
@@ -28,9 +28,7 @@ const AboutUsPage = () => (
 
           <div className="col-lg-6 col-md-12">
             <div className="about-content">
-              <div className="section-title">
-                <h2>About Us</h2>
-                <div className="bar"></div>
+              <div className="section-title" style={{textAlign : 'left'}}>
                 <p>
                   Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In
                   sagittis eg esta ante, sed viverra nunc tinci dunt nec elei

@@ -13,7 +13,7 @@ const ContactInfo = () => {
     <div className="icon">
       <Icon.MapPin />
     </div>
-    <div className="content" >
+    <div className="content" style={{textAlign : 'left'}} >
       <h3>USA</h3>
       <p>253 S Broadway, Hicksville, NY, United States, New York</p>
     </div>
@@ -24,7 +24,7 @@ const ContactInfo = () => {
                 <div className="icon">
                   <Icon.MapPin />
                 </div>
-                <div className="content">
+                <div className="content" style={{textAlign : 'left'}}>
                 <h3>INDIA </h3>
                 <p>
                 Ground Floor, Plot No 127, Sector 44, Gurugram, Haryana 122003
@@ -34,11 +34,11 @@ const ContactInfo = () => {
             </div>
 
             <div className="col-lg-4 col-md-6 col-sm-6">
-  <div className="contact-info-box" style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
-    <div className="icon" style={{ flex: '0 0 15%', textAlign: 'center' }}>
+  <div className="contact-info-box" >
+    <div className="icon" >
       <Icon.Phone />
     </div>
-    <div className="content" style={{ flex: '1', paddingLeft: '10px' }}>
+    <div className="content" style={{ textAlign :'left'  }}>
       <h3>Call Here</h3>
       <p>
         <a href="tel:+919654160160" style={{ textDecoration: 'none', color: 'inherit' }}>+91 9654 160 160</a>

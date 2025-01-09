@@ -11,7 +11,7 @@ const FAQ = () => {
     <div className="faq-container">
       <div className="faq-content">
         <h2 className="mb-4">Frequently Asked Questions</h2>
-        <div className="accordion" id="faqAccordion">
+        <div className="accordion" id="faqAccordion" style={{minWidth : "680px"}}>
           {/* First FAQ */}
           <div className="accordion-item">
             <h2 className="accordion-header" id="heading0">
