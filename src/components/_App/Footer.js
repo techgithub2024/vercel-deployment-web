@@ -23,7 +23,7 @@ const Footer = () => {
             >
               <div className="single-footer-widget">
                 <div className="logo">
-                  <Link to="/digital-agency">
+                  <Link to="/">
                     <img src={Logo} alt="logo"  width={60}  height={40} />
                   </Link>
                 </div>
@@ -44,7 +44,7 @@ const Footer = () => {
                 <h3>Company</h3>
                 <ul className="list">
                   <li>
-                    <Link to="/digital-agency">Home</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
                     <Link to="/about-3">About</Link>

@@ -35,7 +35,7 @@ const NavbarStyleFive = () => {
         <div className="container-fluid">
           <nav className="navbar navbar-expand-md navbar-light">
             <Link
-              to="/digital-agency"
+              to="/"
               onClick={toggleNavbar}
               className="navbar-brand"
             >
@@ -61,7 +61,7 @@ const NavbarStyleFive = () => {
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <Link
-                    to="/digital-agency" 
+                    to="/" 
                     className="nav-link"
                   >
                     Home 

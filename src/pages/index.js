@@ -1,57 +1,47 @@
 import * as React from "react"
 import Layout from "../components/_App/layout"
 import Seo from "../components/_App/seo"
-import Navbar from "../components/_App/Navbar"
-import MainBanner from "../components/ITStartup/MainBanner"
-import Features from "../components/ITStartup/Features"
-import ServicesArea from "../components/ITStartup/ServicesArea"
-import OurFeatures from "../components/ITStartup/OurFeatures"
-import Team from "../components/Common/Team"
-import FunFactsArea from "../components/Common/FunFactsArea"
-import RecentWorks from "../components/Common/RecentWorks"
-import PricingStyleOne from "../components/PricingPlans/PricingStyleOne"
-import Feedback from "../components/Common/Feedback"
-import Partner from "../components/Common/Partner"
-import BlogPost from "../components/Common/BlogPost"
+import NavbarStyleFive from "../components/_App/NavbarStyleFive"
+import MainBanner from "../components/DigitalAgency/MainBanner"
+import WhatWeOffer from "../components/DigitalAgency/WhatWeOffer"
+import AboutUsContent from "../components/DigitalAgency/AboutUsContent"
+import OurServices from "../components/DigitalAgency/OurServices"
+import DigitalAgencyFunFacts from "../components/DigitalAgency/DigitalAgencyFunFacts"
+import Projects from "../components/DigitalAgency/Projects"
+import PricingStyleThree from "../components/PricingPlans/PricingStyleThree"
+import FeedbackStyleThree from "../components/Common/FeedbackStyleThree"
+import BlogPostStyleTwo from "../components/Common/BlogPostStyleTwo"
+import CTAStyleTwo from "../components/Common/CTAStyleTwo"
 import Footer from "../components/_App/Footer"
-
-const IndexPage = () => (
-  <Layout>
-
-    <Navbar />
-
+import FAQ from "./Faqdesign"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+const DigitalAgencyHomePage = () => {
+  return(
+<Layout>
+    <NavbarStyleFive />
     <MainBanner />
-
-    <Features />
-
-    <ServicesArea />
-
-    <OurFeatures />
-
-    <Team />
-
-    <FunFactsArea />
-
-    <RecentWorks />
-
-    <PricingStyleOne />
-
-    <Feedback />
-
-    <Partner />
-
-    <BlogPost />
-
+    <WhatWeOffer />
+    <AboutUsContent/>
+    <OurServices />
+    <DigitalAgencyFunFacts />
+    {/* <Projects /> */}
+    <PricingStyleThree />
+    {/* <FeedbackStyleThree /> */}
+    <BlogPostStyleTwo />
+    <CTAStyleTwo />
+    <FAQ/>
     <Footer />
- 
   </Layout>
-)
+  )
+}
 
 /**
  * Head export to define metadata for the page
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Digital Agency" />
 
-export default IndexPage
+export default DigitalAgencyHomePage
