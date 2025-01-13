@@ -1,42 +1,55 @@
-import React from "react"
-import { useState } from "react"
-import ContactImg from "../../images/contact-img.png"
-import emailjs from 'emailjs-com';
+import React, { useState } from "react";
+import ContactImg from "../../images/contact-img.png";
+import emailjs from '@emailjs/browser';
 
-const Apply = () => {
-const [name , setName] = useState("")
-const [email , setEmail] = useState("")
-const [phoneNumber , setPhoneNumber] = useState("")
-const[subject , setSubject] = useState("")
-const [message , setMessage] = useState("")
-const handleSubmit = (e) => {
-  e.preventDefault();
+const Apply = ({ jd }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [file, setFile] = useState(null);
+  const [url, setUrl] = useState("");
+  const [letter, setLetter] = useState("");
 
-  if (name && email && phoneNumber && subject && message) {
-    const templateParams = {
-      name,
-      email,
-      phoneNumber,
-      subject,
-      message,
-    };
+  const handleFileChange = (e) => {
+    const uploadedFile = e.target.files[0];
+    if (uploadedFile) {
+      // Validate file size (less than 2MB)
+      if (uploadedFile.size > 2000000) {
+        alert("File size should be less than 2MB.");
+        setFile(null); // Clear the file input
+      } else {
+        setFile(uploadedFile); // Set the file if valid
+      }
+    }
+  };
 
-    emailjs
-      .send('service_u74jejo', 'template_pwfgf9w', templateParams)
-      .then(
-        (response) => {
-          console.log('SUCCESS!', response.status, response.text);
-          alert('Message sent successfully!');
-        },
-        (error) => {
-          console.error('FAILED...', error);
-          alert('Failed to send the message. Please try again.');
-        }
-      );
-  } else {
-    alert('Please fill out all fields.');
-  }
-};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Check if all required fields are filled
+      // Send email using EmailJS
+      emailjs.sendForm('service_u74jejo', 'template_p6fu2db', e.target, 'Uge6_0K_ob7YEO_ER')
+        .then((result) => {
+          console.log(result.text);
+          alert('Job application submitted successfully!');
+        }, (error) => {
+          console.log(error.text);
+          alert('Failed to send application. Please try again later.');
+        });
+
+      // Reset form fields after submission
+      setName("");
+      setEmail("");
+      setPhoneNumber("");
+      setSubject("");
+      setMessage("");
+      setFile(null);
+      setUrl("");
+      setLetter("");
+  };
+
   return (
     <>
       <div className="contact-area ptb-80">
@@ -44,7 +57,6 @@ const handleSubmit = (e) => {
           <div className="section-title">
             <h2>APPLY HERE</h2>
             <div className="bar"></div>
-            {/* <p>Anything On your Mind. We’ll Be Glad To Assist You!</p> */}
           </div>
 
           <div className="row align-items-center">
@@ -61,9 +73,7 @@ const handleSubmit = (e) => {
                         type="text"
                         name="name"
                         value={name}
-                        onChange={(e)=>{
-                          setName(e.target.value)
-                        }}
+                        onChange={(e) => setName(e.target.value)}
                         placeholder="Your Name"
                         className="form-control"
                       />
@@ -73,12 +83,10 @@ const handleSubmit = (e) => {
                   <div className="col-lg-12 col-md-12">
                     <div className="form-group">
                       <input
-                        type="text"
+                        type="email"
                         name="email"
                         value={email}
-                        onChange={(e)=>{
-                          setEmail(e.target.value)
-                        }}
+                        onChange={(e) => setEmail(e.target.value)}
                         placeholder="Your email address"
                         className="form-control"
                       />
@@ -89,11 +97,9 @@ const handleSubmit = (e) => {
                     <div className="form-group">
                       <input
                         type="text"
-                        name="number"
+                        name="phoneNumber"
                         value={phoneNumber}
-                        onChange={(e)=>{
-                          setPhoneNumber(e.target.value)
-                        }}
+                        onChange={(e) => setPhoneNumber(e.target.value)}
                         placeholder="Your phone number"
                         className="form-control"
                       />
@@ -101,41 +107,39 @@ const handleSubmit = (e) => {
                   </div>
 
                   <div className="col-lg-6 col-md-6">
-                  <div className="form-group">
-      <input
-        type="file"
-        name="resume"
-        id="resume"
-        className="form-control"
-        accept=".pdf,.docx"
-      />
-      <small className="form-text text-muted">Resume Upload in pdf or docx . Max-2MB </small>
-    </div>
-</div>
+                    <div className="form-group">
+                      <input
+                        type="file"
+                        name="resume"
+                        id="resume"
+                        className="form-control"
+                        accept=".pdf,.docx"
+                        onChange={handleFileChange}
+                      />
+                      <small className="form-text text-muted">Resume Upload in pdf or docx. Max 2MB.</small>
+                    </div>
+                  </div>
+
                   <div className="col-lg-6 col-md-6">
                     <div className="form-group">
                       <input
-                        type="text"
+                        disabled
                         name="subject"
-                        value={subject}
-                        onChange={(e)=>{
-                          setSubject(e.target.value)
-                        }}
-                        placeholder="Portfolio Url"
+                        value={jd} // The job description is passed as a prop
+                        placeholder="Position Interested In"
                         className="form-control"
                       />
                     </div>
                   </div>
+
                   <div className="col-lg-6 col-md-6">
                     <div className="form-group">
                       <input
                         type="text"
-                        name="subject"
-                        value={subject}
-                        onChange={(e)=>{
-                          setSubject(e.target.value)
-                        }}
-                        placeholder="Position Interested In"
+                        name="url"
+                        value={url}
+                        onChange={(e) => setUrl(e.target.value)}
+                        placeholder="Portfolio URL"
                         className="form-control"
                       />
                     </div>
@@ -144,13 +148,11 @@ const handleSubmit = (e) => {
                   <div className="col-lg-12 col-md-12">
                     <div className="form-group">
                       <textarea
-                        name="text"
+                        name="coverLetter"
                         cols="30"
                         rows="5"
-                        value={message}
-                        onChange={(e)=>{
-                          setMessage(e.target.value)
-                        }}
+                        value={letter}
+                        onChange={(e) => setLetter(e.target.value)}
                         placeholder="Cover Letter"
                         className="form-control"
                       />
@@ -158,7 +160,7 @@ const handleSubmit = (e) => {
                   </div>
 
                   <div className="col-lg-12 col-sm-12">
-                    <button type="submit" className="btn btn-primary" >
+                    <button type="submit" className="btn btn-primary">
                       Apply
                     </button>
                   </div>
@@ -169,7 +171,7 @@ const handleSubmit = (e) => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Apply
+export default Apply;

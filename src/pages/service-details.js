@@ -93,7 +93,7 @@ const ServiceDetailsPage = () => {
       </div>
     </div>
   </div>
-<Apply/>
+<Apply jd={jd}/>
     <Footer />
   </Layout>)
 }
