@@ -95,7 +95,7 @@ const NavbarStyleFive = () => {
                         onClick={toggleNavbar}
                         className="nav-link"
                       >
-                        MISSION/VISION
+                        MISSION & VISION
                       </Link>
                     </li>
                     <li className="nav-item">

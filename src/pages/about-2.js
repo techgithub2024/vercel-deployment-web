@@ -84,13 +84,13 @@ return (
               <div className="col-lg-4 col-sm-6">
                 <div className="single-services-box">
                   <h3>
-                    <Link to="/service-details">  Graphic Designer </Link>
+                    <Link to="/service-details?jd=gd">Graphic Designer</Link>
                   </h3>
                   <p>
                   We’re on the lookout for a talented and innovative Graphic Designer to bring fresh ideas to life and create visually stunning designs. If you have a passion for design, creativity, and attention to detail, we want you!
                   </p>
                   <div className="others-option">
-                                <Link to="/service-details" className="btn btn-gradient">
+                                <Link to="/service-details?jd=gd" className="btn btn-gradient">
                                   APPLY
                                 </Link>
                               </div>
@@ -100,13 +100,13 @@ return (
               <div className="col-lg-4 col-sm-6">
                 <div className="single-services-box">
                   <h3>
-                    <Link to="/service-details">Content Writer</Link>
+                    <Link to="/service-details?jd=gd" >Content Writer</Link>
                   </h3>
                   <p>
                   We’re seeking a skilled and creative Content Writer to craft compelling, high-quality content that engages and informs. If you have a passion for writing and a knack for storytelling, we want you! . Feel free to include your thought in your content.
                   </p>
                   <div className="others-option">
-                                <Link to="/service-details" className="btn btn-gradient">
+                                <Link to="/service-details?jd=cw" className="btn btn-gradient">
                                   APPLY
                                 </Link>
                               </div>

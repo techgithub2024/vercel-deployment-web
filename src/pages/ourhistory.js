@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/_App/layout"
 import Seo from "../components/_App/seo"
 import NavbarStyleFive from "../components/_App/NavbarStyleFive"
+import vision from "../images/agency-image/history01.jpg"
 import Footer from "../components/_App/Footer"
 import PageBanner from "../components/Common/PageBanner"
 
@@ -18,7 +19,7 @@ const OurHistory = () => (
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12">
             <div className="ml-about-img">
-              <img src="https://static.vecteezy.com/system/resources/previews/046/593/789/non_2x/creative-logo-design-for-real-estate-company-vector.jpg" alt="About" width={600} />
+              <img src={vision} alt="About" width={600} />
             </div>
           </div>
           <div className="col-lg-6 col-md-12">

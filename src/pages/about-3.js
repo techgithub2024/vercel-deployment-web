@@ -32,7 +32,7 @@ const AboutUsPage3 = () => (
             </div>
           </div>
 
-          <div className="col-lg-6 col-md-12" style={{marginBottom : "140px"}}>
+          <div className="col-lg-6 col-md-12" style={{marginBottom : "10%"}}>
             <div className="agency-about-content">
               <span className="sub-title">About Us</span>
               <h2>We Don’t Just Market, We Transform!

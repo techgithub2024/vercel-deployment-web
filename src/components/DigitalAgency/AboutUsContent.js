@@ -23,7 +23,7 @@ const AboutUsContent = () => {
               </div>
             </div>
 
-            <div className="col-lg-6 col-md-12" style={{"marginBottom" : "140px"}}>
+            <div className="col-lg-6 col-md-12" style={{"marginBottom" : "10%"}}>
               <div className="agency-about-content">
                 <span className="sub-title">About Us</span>
                 <h2>We Don’t Just Market, We Transform!</h2>
@@ -63,11 +63,11 @@ const AboutUsContent = () => {
           <img src={Shape5} alt="Shap" />
         </div>
       </div>
-      <div className="agency-about-area" style={{ marginTop: '10%' }}>
+      <div className="agency-about-area" style={{ marginTop: '5%' }}>
   <div className="container-fluid">
     <div className="row align-items-center">
       {/* Content on the left */}
-      <div className="col-lg-6 col-md-12 order-lg-1 order-md-1" style={{"marginBottom" : "230px"}}>
+      <div className="col-lg-6 col-md-12 order-lg-1 order-md-1" style={{"marginBottom" : "10%"}}>
   <div class="why-choose-us">
     <div className="agency-about-content">
       <span className="sub-title">Why Choose Us</span>
