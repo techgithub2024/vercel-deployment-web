@@ -14,7 +14,7 @@ const MainBanner = () => {
       <div className="agency-main-banner">
         <div className="container-fluid">
           <div className="row align-items-center">
-            <div className="col-lg-6 col-md-12" style={{marginTop : "10rem"}}>
+            <div className="col-lg-6 col-md-12" style={{marginTop : "10%"}}>
               <div className="agency-banner-content">
                 <span className="sub-title">We blend creativity &</span>
                 <h1> Digital Agency</h1>

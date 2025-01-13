@@ -19,7 +19,7 @@ const BlogPage = () => (
   <Layout>
     <NavbarStyleFive />
 
-    <PageBanner pageTitle="Blog Page" />
+    <PageBanner pageTitle="Blog" />
 
     <div className="blog-area ptb-80">
       <div className="container">
@@ -32,7 +32,7 @@ const BlogPage = () => (
                 </Link>
 
                 <div className="date">
-                  <Icon.Calendar /> March 15, 2023
+                  <Icon.Calendar /> March 15, 2024
                 </div>
               </div>
 
@@ -67,7 +67,7 @@ Streamlining Success: Leveraging the Power of SEO Automation Tools
                 </Link>
 
                 <div className="date">
-                  <Icon.Calendar /> March 17, 2023
+                  <Icon.Calendar /> March 17, 2024
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ Streamlining Success: Leveraging the Power of SEO Automation Tools
                 </Link>
 
                 <div className="date">
-                  <Icon.Calendar /> March 19, 2023
+                  <Icon.Calendar /> March 19, 2024
                 </div>
               </div>
 

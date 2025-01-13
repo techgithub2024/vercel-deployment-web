@@ -10,8 +10,8 @@ const FAQ = () => {
   return (
     <div className="faq-container">
       <div className="faq-content">
-        <h2 className="mb-4">Frequently Asked Questions</h2>
-        <div className="accordion" id="faqAccordion" style={{minWidth : "680px"}}>
+        <h2 className="mb-4" style={{width : '70%'}}>Frequently Asked Questions</h2>
+        <div className="accordion" id="faqAccordion" >
           {/* First FAQ */}
           <div className="accordion-item">
             <h2 className="accordion-header" id="heading0">
@@ -28,8 +28,8 @@ const FAQ = () => {
               className={`accordion-collapse collapse ${activeIndex === 0 ? "show" : ""}`}
               aria-labelledby="heading0"
             >
-              <div className="accordion-body">
-                <p>Digital marketing is the practice of promoting products, services through online channels.</p>
+              <div className="accordion-body" >
+                <p style={{width : "40%"}}>Digital marketing is the practice of promoting products, services through online channels.</p>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@ const FAQ = () => {
               aria-labelledby="heading1"
             >
               <div className="accordion-body">
-                <p>We offer a comprehensive range of digital marketing services to help businesses grow.</p>
+                <p style={{width : "40%"}}>We offer a comprehensive range of digital marketing services to help businesses grow.</p>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ const FAQ = () => {
               aria-labelledby="heading2"
             >
               <div className="accordion-body">
-                <p>
+                <p style={{width : "40%"}}>
                   Hiring a digital marketing firm offers numerous advantages, including expertise, cost-effectiveness,
                   time savings, scalable solutions, latest strategies, and measurable results.
                 </p>
@@ -98,7 +98,7 @@ const FAQ = () => {
               aria-labelledby="heading3"
             >
               <div className="accordion-body">
-                <p>
+                <p style={{width : "40%"}}> 
                   SEO (Search Engine Optimization) is the process of optimizing your website to rank higher on search
                   engines like Google. It's important for increased visibility, more organic traffic, better user
                   experience, credibility & trust, and higher conversions.
@@ -108,8 +108,8 @@ const FAQ = () => {
           </div>
         </div>
       </div>
-      <div className="faq-box">
-        <div className="faq-extended-content">
+      <div className="faq-box" >
+        <div className="faq-extended-content" style={{width : '70%'}}>
           {activeIndex === 0 && (
             <>
               <h3 className="faq-question" style={{ fontWeight: "bold" }}>

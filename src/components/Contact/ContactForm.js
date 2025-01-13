@@ -11,28 +11,31 @@ const[subject , setSubject] = useState("")
 const [message , setMessage] = useState("")
 const handleSubmit = (e) => {
   e.preventDefault();
-
+  console.log(name , email , phoneNumber , subject , message)
   if (name && email && phoneNumber && subject && message) {
-    const templateParams = {
-      name,
-      email,
-      phoneNumber,
-      subject,
-      message,
+    const data = {
+      name: name,
+      email: email,
+      phoneNumber: phoneNumber,
+      subject: subject,
+      message: message
     };
+  
+    fetch('http://localhost:7000/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
 
-    emailjs
-      .send('service_u74jejo', 'template_pwfgf9w', templateParams)
-      .then(
-        (response) => {
-          console.log('SUCCESS!', response.status, response.text);
-          alert('Message sent successfully!');
-        },
-        (error) => {
-          console.error('FAILED...', error);
-          alert('Failed to send the message. Please try again.');
-        }
-      );
   } else {
     alert('Please fill out all fields.');
   }

@@ -68,7 +68,7 @@ const AboutUsContent = () => {
     <div className="row align-items-center">
       {/* Content on the left */}
       <div className="col-lg-6 col-md-12 order-lg-1 order-md-1" style={{"marginBottom" : "230px"}}>
-  <div style={{ marginLeft: '80px' }}>
+  <div class="why-choose-us">
     <div className="agency-about-content">
       <span className="sub-title">Why Choose Us</span>
 
