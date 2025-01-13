@@ -39,7 +39,7 @@ From the outset, we understood the transformative power of the internet and its 
       
       <div style={{ width: '100%', padding: '40px 0', backgroundColor: '' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
-          <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#6084A4' }}>
+          <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#6084A4' }}>
           </p>
           <ul style={{ listStyleType: 'disc', paddingLeft: '40px', color: '#6084A4' }}>
             <li style={{ marginBottom: '10px' }}>

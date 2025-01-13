@@ -8315,6 +8315,7 @@ Footer CSS
   display: inline-block;
   margin-right: 8px;
 }
+
 .single-footer-widget ul.social-links li:last-child {
   margin-right: 0;
 }
@@ -8616,6 +8617,7 @@ Go Top CSS
   overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
+
 .modal-close-button {
   position: absolute;
   top: 10px;
@@ -8721,6 +8723,8 @@ Go Top CSS
 
 
 
+
+
 @media only screen and (max-width: 768px) {
   .faq-area {
     display: flex;
@@ -8733,7 +8737,11 @@ Go Top CSS
     width: 100%; /* Maintain full width on smaller screens */
     margin : 0 auto ;
     align-items: center;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-top: 10%;
   }
+  .accordion{
+    width : 80%
+  }
+  
 }

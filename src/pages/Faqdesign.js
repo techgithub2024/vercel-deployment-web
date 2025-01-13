@@ -14,7 +14,7 @@ const FAQ = () => {
       <div className="container">
       <h2 className="sub-title" >Frequenty Asked Questions</h2>
         <div className="faq-accordion">
-          <Accordion allowZeroExpanded preExpanded={["a"]}>
+          <Accordion>
             <AccordionItem uuid="a">
               <AccordionItemHeading>
                 <AccordionItemButton>

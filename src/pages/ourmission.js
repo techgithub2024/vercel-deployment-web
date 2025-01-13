@@ -40,10 +40,14 @@ const OurMission = () => (
 
       <div style={{ width: '100%', padding: '40px 0', backgroundColor: '' }}>
   <div style={{ textAlign: 'center' }}>
-    <h1  style={{ fontSize: '30px', lineHeight: '1.6', color: '', marginBottom: '20px' }}>Driving Digital Success through Innovation and Growth</h1>
+    <h1  style={{ fontSize: '30px', lineHeight: '1.6', color: '', marginBottom: '20px' , fontWeight :"600" , fontSize : "28px" }}>OUR VISION : Driving Digital Success through Innovation and Growth</h1>
+    <div className="ml-about-content">
+    <div className="bar" style={{marginLeft :"40%"}}></div>
+    </div>
   </div>
+ 
   <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
-    <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#6084A4' }}>
+    <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#6084A4' }}>
       “Blending creative brilliance with strategic excellence. We help businesses build unstoppable brands that dominate their markets, captivate audiences, and drive exponential growth."
     </p>
     <ul style={{ listStyleType: 'disc', paddingLeft: '40px', color: '#6084A4' }}>
@@ -68,25 +72,6 @@ const OurMission = () => (
     </ul>
   </div>
 </div>
-
-      <div style={{ width: '100%', padding: '40px 0', backgroundColor: '' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
-          <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#6084A4' }}>
-            We're committed to three core principles that guide everything we do:
-          </p>
-          <ul style={{ listStyleType: 'disc', paddingLeft: '40px', color: '#6084A4' }}>
-            <li style={{ marginBottom: '10px' }}>
-              <strong>Fostering Growth:</strong> We understand that sustainable growth is the lifeblood of any successful business. Our strategies are designed to drive measurable growth in key areas such as website traffic, lead generation, conversions, and revenue. We work closely with you to define clear, achievable goals and develop a roadmap to achieve them.
-            </li>
-            <li style={{ marginBottom: '10px' }}>
-              <strong>Enhancing Brand Visibility:</strong> In today's crowded online marketplace, it's crucial to stand out from the competition. We help you elevate your brand visibility by creating impactful digital experiences that resonate with your target audience. This includes optimizing your online presence across various channels, building brand awareness, and fostering meaningful connections with your customers.
-            </li>
-            <li style={{ marginBottom: '10px' }}>
-              <strong>Ensuring Client Success:</strong> Your success is our ultimate measure of achievement. We're dedicated to building long-term partnerships with our clients, providing exceptional service, and consistently exceeding expectations. We act as an extension of your team, working collaboratively to achieve shared goals and navigate the complexities of the digital landscape.
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
 
     <Footer />
