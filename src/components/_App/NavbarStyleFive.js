@@ -95,7 +95,7 @@ const NavbarStyleFive = () => {
                         onClick={toggleNavbar}
                         className="nav-link"
                       >
-                        OUR MISSION
+                        MISSION/VISION
                       </Link>
                     </li>
                     <li className="nav-item">
@@ -104,7 +104,7 @@ const NavbarStyleFive = () => {
                         activeClassName="active"
                         onClick={toggleNavbar}
                         className="nav-link">
-                     OUR HISTORY
+                         HISTORY
                       </Link>
                     </li>
                   </ul>

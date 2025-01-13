@@ -35,6 +35,35 @@ const OurMission = () => (
       </div>
 
       <div style={{ width: '100%', padding: '40px 0', backgroundColor: '' }}>
+        <div><h1 style={{ fontSize: '30px', lineHeight: '1.6', color: '#6084A4' , padding: '0 20px' }}>VISION STATEMENT : </h1></div>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
+          <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#6084A4' }}>
+          “Blending creative brilliance with strategic excellence. We help businesses build unstoppable brands that dominate their markets, captivate audiences, and drive exponential growth."
+          </p>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '40px', color: '#6084A4' }}>
+            <li style={{ marginBottom: '10px' }}>
+              <strong>Revolutionizing Connections:</strong> We go beyond traditional marketing strategies. We are not just creating campaigns; we are transforming how brands connect with their audience.
+            </li>
+            <li style={{ marginBottom: '10px' }}>
+              <strong>Shaping Unforgettable Identities:</strong> Brand identity is at the core of what we are offering—helping businesses define and refine their unique essence in the marketplace.
+            </li>
+            <li style={{ marginBottom: '10px' }}>
+              <strong>Driving Meaningful Growth:</strong>This emphasizes our goal of contributing to tangible business success, not just aesthetic appeal. Growth is a clear business outcome.
+            </li>
+            <li style={{ marginBottom: '10px' }}>
+              <strong>Driving Meaningful Growth:</strong>This emphasizes our goal of contributing to tangible business success, not just aesthetic appeal. Growth is a clear business outcome.
+            </li>
+            <li style={{ marginBottom: '10px' }}>
+              <strong>Lasting Loyalty : </strong>Building loyal customer relationships is vital for brand sustainability, and this sets our agency apart from others that may focus on short-term wins.
+            </li>
+            <li style={{ marginBottom: '10px' }}>
+              <strong>Becoming a Leading Force: </strong>This underlines our goal to dominate the brand management space, aspiring to be a major name in the industry.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div style={{ width: '100%', padding: '40px 0', backgroundColor: '' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
           <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#6084A4' }}>
             We're committed to three core principles that guide everything we do:
