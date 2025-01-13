@@ -40,7 +40,7 @@ const OurMission = () => (
 
       <div style={{ width: '100%', padding: '40px 0', backgroundColor: '' }}>
   <div style={{ textAlign: 'center' }}>
-    <h1  style={{ fontSize: '30px', lineHeight: '1.6', color: '', marginBottom: '20px' , fontWeight :"600" , fontSize : "28px" }}>OUR VISION : Driving Digital Success through Innovation and Growth</h1>
+  <h1 className="heading">OUR VISION : Driving Digital Success through Innovation and Growth</h1>
     <div className="ml-about-content">
     <div className="bar" style={{marginLeft :"40%"}}></div>
     </div>

@@ -8743,5 +8743,21 @@ Go Top CSS
   .accordion{
     width : 80%
   }
+
   
+}
+
+.heading {
+  font-size: 28px;
+  line-height: 1.6;
+  color: #000; /* Add your preferred color */
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Mobile font size */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 20px;
+  }
 }
