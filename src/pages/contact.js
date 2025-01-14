@@ -16,7 +16,7 @@ const ContactPage = () => (
     <PageBanner pageTitle="Contact Us" />
 
     <ContactInfo />
-    <ContactForm />
+  <ContactForm />
     <GoogleMap />
 
     <Footer />
