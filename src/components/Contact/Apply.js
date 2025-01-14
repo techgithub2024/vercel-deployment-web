@@ -1,53 +1,65 @@
 import React, { useState } from "react";
 import ContactImg from "../../images/contact-img.png";
-import emailjs from '@emailjs/browser';
 
 const Apply = ({ jd }) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-  const [file, setFile] = useState(null);
-  const [url, setUrl] = useState("");
-  const [letter, setLetter] = useState("");
+  const [name, setName] = useState(""); // for form-data
+  const [email, setEmail] = useState(""); // for form-data
+  const [positionRole, setPositionRole] = useState(""); // for form-data
+  const [phoneNumber, setPhoneNumber] = useState(""); // for form-data
+  const [portfolioUrl, setPortfolioUrl] = useState(""); // for form-data
+  const [coverLetter, setCoveLetter] = useState(""); // for form-data
+  const [resume, setResume] = useState(""); // for form-data
+  const [file, setFile] = useState(null); // for setting the file after upload
 
+  // Handle file change
   const handleFileChange = (e) => {
     const uploadedFile = e.target.files[0];
     if (uploadedFile) {
-      // Validate file size (less than 2MB)
-      if (uploadedFile.size > 2000000) {
-        alert("File size should be less than 2MB.");
-        setFile(null); // Clear the file input
-      } else {
-        setFile(uploadedFile); // Set the file if valid
-      }
+      setFile(uploadedFile);
+      setResume(uploadedFile); 
     }
   };
 
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setPositionRole(jd);
 
-    // Check if all required fields are filled
-      // Send email using EmailJS
-      emailjs.sendForm('service_u74jejo', 'template_p6fu2db', e.target, 'Uge6_0K_ob7YEO_ER')
-        .then((result) => {
-          console.log(result.text);
-          alert('Job application submitted successfully!');
-        }, (error) => {
-          console.log(error.text);
-          alert('Failed to send application. Please try again later.');
-        });
+    // Create a new FormData object
+    const formData = new FormData();
 
-      // Reset form fields after submission
-      setName("");
-      setEmail("");
-      setPhoneNumber("");
-      setSubject("");
-      setMessage("");
-      setFile(null);
-      setUrl("");
-      setLetter("");
+    // Append all form values to FormData
+    formData.append("resume", file); // Append file
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("position_role", positionRole); // Appending role (adjust if you want the prop `jd`)
+    formData.append("phone_number", phoneNumber);
+    formData.append("portfolio_url", portfolioUrl);
+    formData.append("cover_letter", coverLetter);
+    formData.append("job_description", jd); // Appending job description
+
+    // Log FormData entries (for testing)
+    for (let [key, value] of formData.entries()) {
+      console.log(`${key}: ${value}`);
+    }
+    try {
+      const response = await fetch("http://localhost:3000/job-mail", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+      const result = await response.json();
+      console.log("Form submitted successfully:", result);
+      alert("Form submitted successfully");
+      window.location.reload();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert('Error submitting form');
+      window.location.reload();
+    }
   };
 
   return (
@@ -116,17 +128,20 @@ const Apply = ({ jd }) => {
                         accept=".pdf,.docx"
                         onChange={handleFileChange}
                       />
-                      <small className="form-text text-muted">Resume Upload in pdf or docx. Max 2MB.</small>
+                      <small className="form-text text-muted">
+                        Resume Upload in pdf or docx. Max 2MB.
+                      </small>
                     </div>
                   </div>
 
                   <div className="col-lg-6 col-md-6">
                     <div className="form-group">
                       <input
-                        disabled
-                        name="subject"
-                        value={jd} // The job description is passed as a prop
-                        placeholder="Position Interested In"
+                        type="text"
+                        name="positionRole"
+                        value={jd}
+                        onChange={(e) => setPositionRole(e.target.value)}
+                        placeholder="Position Role"
                         className="form-control"
                       />
                     </div>
@@ -137,8 +152,8 @@ const Apply = ({ jd }) => {
                       <input
                         type="text"
                         name="url"
-                        value={url}
-                        onChange={(e) => setUrl(e.target.value)}
+                        value={portfolioUrl}
+                        onChange={(e) => setPortfolioUrl(e.target.value)}
                         placeholder="Portfolio URL"
                         className="form-control"
                       />
@@ -151,13 +166,16 @@ const Apply = ({ jd }) => {
                         name="coverLetter"
                         cols="30"
                         rows="5"
-                        value={letter}
-                        onChange={(e) => setLetter(e.target.value)}
+                        value={coverLetter}
+                        onChange={(e) => setCoveLetter(e.target.value)}
                         placeholder="Cover Letter"
                         className="form-control"
                       />
                     </div>
                   </div>
+
+                  {/* Hidden input for job description */}
+                  <input type="hidden" name="jd" value={jd} />
 
                   <div className="col-lg-12 col-sm-12">
                     <button type="submit" className="btn btn-primary">

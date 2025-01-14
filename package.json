@@ -5,8 +5,11 @@
   "version": "1.7.0",
   "author": "@envytheme",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
+    "cloudinary": "^2.5.1",
+    "cloudinary-core": "^2.13.1",
     "emailjs-com": "^3.2.0",
     "gatsby": "^5.9.1",
     "gatsby-plugin-image": "^3.8.0",
@@ -44,7 +47,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  }, 
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
